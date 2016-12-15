@@ -207,7 +207,11 @@
 }
 
 .slider__submit-button{
-    text-align: center;
+    text-align: left;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .btn {

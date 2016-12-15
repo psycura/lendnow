@@ -128,10 +128,17 @@
 
     a{
         text-decoration: none;
+        display: block;
+        padding:rem(10px);
+        padding-right:rem(5px);
+
+
+
+
         &:hover{
             text-decoration: none;
             color: $black;
-            cursor: default;
+            outline:2px solid $grey;
         }
     }
 }

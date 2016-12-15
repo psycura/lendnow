@@ -1,34 +1,26 @@
-let fs = require('fs');
-
 let gulp = require('gulp');
-let jade = require('gulp-jade');
-let watch=require('watch');
-
-
-
+let cmq = require('gulp-combine-media-queries');
+let autoprefixer = require('gulp-autoprefixer');
 
 let paths = {
-  jade : {
-    src : 'src/markups/pages/*.jade',
-    dist : 'dist/pages'
-  }
+    styles : {
+        src : 'src/css/*/*.css',
+        dist : 'dist/css'
+    },
+    scripts : {
+        src : 'src/js/*.js',
+        dist : 'dist/js'
+    }
 };
 
-gulp.task('jade', function() {
-  let YOUR_LOCALS = './content.json';
-  
-  gulp.src(paths.jade.src)
-      
-      .pipe(jade({
-        locals: JSON.parse(fs.readFileSync(YOUR_LOCALS, 'utf-8')),
-        pretty : '\t',
-      }))
-      
-      .pipe(gulp.dest(paths.jade.dist))
+gulp.task('styles', function () {
+    return gulp.src('src/css/main.css')
+        .pipe(cmq({
+            log : true
+        }))
+        .pipe(autoprefixer({
+            browsers : ['last 3 versions']
+        }))
+        
+        .pipe(gulp.dest('dist/css'));
 });
-
-gulp.task('watch', function () {
-  gulp.watch(paths.jade.src, ['jade'])
-});
-
-gulp.task('default', ['jade','watch']);

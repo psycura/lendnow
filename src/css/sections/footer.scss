@@ -26,6 +26,41 @@ footer {
 
     }
 
+    .socials{
+        @include ipad {
+            display: none;
+        }
+    }
+
+    .socials__item{
+
+        padding-left: 0;
+
+        @include ipad {
+            margin-right: rem(10px);
+        }
+        .socials__link{
+            text-align: center;
+            border:1px solid #dddddd;
+            width:rem(35px);
+            height:rem(35px);
+            display: block;
+            padding-top: rem(10px);
+
+
+
+            &:hover{
+                border-radius:50%;
+                background: $orange;
+                color: #FFF;
+                border-color: transparent;
+
+            }
+        }
+    }
+
+
+
     .title {
         font-size: rem(16px);
         margin-bottom: rem(70px);
@@ -137,6 +172,16 @@ footer {
     .post__date_small {
         font-size: rem(12px);
         color: #888888;
+    }
+
+    .contacts-info__block{
+        .socials{
+            display: none;
+            
+            @include ipad {
+                display: block;
+            }
+        }
     }
 
     .contact_item {

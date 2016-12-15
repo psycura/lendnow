@@ -3,18 +3,18 @@
 mixin socials
     -
         var socialItems={
-        'www.facebook.com':'#',
-        'www.twitter.com':'#',
-        'www.google.com':'#',
-        'www.pinterest.com':'#'
+        'http://www.facebook.com':'fa fa-facebook',
+        'http://www.twitter.com':'fa fa-twitter',
+        'http://www.google.com':'fa fa-google-plus',
+        'http://www.pinterest.com':'fa fa-pinterest-p'
 
         }
 
     ul.socials__list
         each  iconSrc,url in socialItems
-            li.socials__item
-                a(href="#{url}")
-                i(class='#{iconSrc}')
+            li.socials__item.col-xs-2
+                a(href="#{url}").socials__link
+                    i(class='#{iconSrc}')
 
 
 
