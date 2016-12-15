@@ -1,0 +1,126 @@
+
+
+mixin socials
+    -
+        var socialItems={
+        'www.facebook.com':'#',
+        'www.twitter.com':'#',
+        'www.google.com':'#',
+        'www.pinterest.com':'#'
+
+        }
+
+    ul.socials__list
+        each  iconSrc,url in socialItems
+            li.socials__item
+                a(href="#{url}")
+                i(class='#{iconSrc}')
+
+
+
+
+
+mixin navigation
+    -
+        var navItems={
+        'Home':'#',
+        'How It Works':'#',
+        'Payday Loans':'#',
+        'Faq':'#',
+        'Blog':'#',
+        'Apply Online':'#',
+        'About Us':'#',
+        'Contact Us':'#'
+
+        }
+    section.navigation
+        nav.main_nav.navbar.navbar-default
+            .container
+                .navbar-header
+                    button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a(href="#").navbar-brand
+
+                .collapse.navbar-collapse(id='navbar1')
+                    ul.nav.navbar-nav
+                        each pageUrl, pageName in navItems
+                            li.nav.navbar-nav
+                                a(href="#{pageUrl}").nav__link=pageName
+
+
+
+
+
+
+
+-var bulletItems=['All Credit Scores Qualify','Quick Access to Funds','Minimal Documentation Required','All Industries Accepted']
+-var checkItems=['FUNDING AMOUNT/ €3,000 – €5,000,000','TIME TO FUNDING/ 24 – 72 Hours','TERM LENGTH/ 3 – 24 Months','PAYMENT FREQUENCY/ Business Day or Weekly']
+
+
+
+mixin sectionLeft(sectionTitle, imgSrc)
+
+    section.payday-loans.section-left
+        .container
+            .left__block
+                .section__title
+                    h3=sectionTitle
+                    .section__subtitle
+                        | WORKING CAPITAL WHEN YOU NEED IT
+                .section__info
+                    .bullets__block
+                        ul.bullets__list
+                            each bullet in bulletItems
+                                li.bullet__item=bullet
+                    .checks__block
+                        ul.checks__list
+                            each item in checkItems
+                                li.check__item=item
+                .section__desc
+                    |Obtaining a merchant cash advance, also known as a revenue-based loan, is a quick and easy way to obtain working capital, even if you have bad credit!
+                .section__cta_block
+                    .section__how_button
+                        a(href="#").btn.btn-primary.btn-lg How UK Payday Loans Work
+                        a(href="#").btn.btn-success.btn-lgn Apply Now
+            .section__image_right
+                img(src="#{imgSrc}" alt="").section__pic
+
+
+
+mixin sectionRight(sectionTitle, imgSrc)
+    section.payday-loans.section-right
+        .container
+            .section__image_left
+                img(src="#{imgSrc}" alt="").section__pic
+
+            .right__block
+                .section__title
+                    h3=sectionTitle
+                    .section__subtitle
+                        | WORKING CAPITAL WHEN YOU NEED IT
+                .section__info
+                    .bullets__block
+                        ul.bullets__list
+                            each bullet in bulletItems
+                                li.bullet__item=bullet
+                    .checks__block
+                        ul.checks__list
+                            each item in checkItems
+                                li.check__item=item
+                .section__desc
+                    | Obtaining a merchant cash advance, also known as a revenue-based loan, is a quick and easy way to obtain working capital, even if you have bad credit!
+                .section__cta_block
+                    .section__how_button
+                        a(href="#").btn.btn-primary.btn-lg How UK Payday Loans Work
+                        a(href="#").btn.btn-success.btn-lg Apply Now
+
+
+
+
+//
+
+
+

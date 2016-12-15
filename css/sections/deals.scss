@@ -1,0 +1,175 @@
+.deals {
+    background: #63a12f;
+    color: #fff;
+    padding-top: rem(100px);
+    position: relative;
+
+    .container {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    @include mobile {
+        padding-top: rem(50px);
+
+    }
+
+}
+
+.deals__title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:rem(100px);
+    position: relative;
+    display: inline-block;
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: rem(-10px);
+        left: 13px;
+        width: 43px;
+        height: 5px;
+        background: $orange;
+
+        @include mobile {
+            left: 50px;
+
+        }
+
+
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: rem(-10px);
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #898989;
+
+        @include mobile {
+            left: 61px;
+
+        }
+    }
+
+}
+
+.deals__services {
+    margin: 0 auto;
+}
+
+.deals__item {
+    display: inline-block;
+    margin-right: rem(23px);
+    position: relative;
+    width:rem(315px);
+
+    @include desktop {
+        width:rem(295px);
+    }
+    
+    @include ipad {
+        width:rem(200px);
+
+    }
+
+    @include tablet {
+        margin-right:rem(50px);
+        margin-bottom:rem(95px);
+        width:rem(220px);
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.deals__text {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    padding: rem(29px) rem(64px);
+    background: #63a12f;
+    width: rem(315px);
+    min-height:rem(94px);
+    display: flex;
+    align-items: center;
+    @include desktop {
+        width:rem(295px);
+    }
+    @include ipad {
+        width:rem(200px);
+        padding:rem(20px);
+
+    }
+    
+    @include tablet {
+        width:rem(220px);
+        
+    }
+}
+
+.deals__bottom {
+    background: #383838;
+    padding-top: rem(188px);
+    padding-bottom: rem(86px);
+    @include ipad {
+        padding-top:rem(140px);
+        padding-bottom:rem(70px);
+    }
+    
+    @include tablet {
+        padding-top:rem(70px);
+
+    }
+
+
+}
+
+.deals_text_block{
+    margin: 0 auto;
+    @include ipad {
+        width:54%;
+        text-align: center;
+
+    }
+
+    @include mobile {
+        width: 95%;
+    }
+}
+
+.deals__cta_text {
+    font-size: rem(35px);
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    
+    @include ipad {
+        margin-bottom: rem(20px);
+        line-height: 1.2;
+        display: block;
+    }
+
+
+}
+
+.deals__cta_button{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:rem(67px);
+    .btn{
+        padding: rem(15px) rem(50px);
+    }
+
+    @include ipad {
+        display: block;
+        margin-left: 0;
+
+    }
+}
+

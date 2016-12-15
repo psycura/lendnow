@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGY,WAAC;EACG,SAAS,EAAC,SAAS;EACnB,cAAc,EAAE,SAAS",
+"sources": ["navigation.scss"],
+"names": [],
+"file": "navigation.css"
+}

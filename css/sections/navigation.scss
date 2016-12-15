@@ -1,0 +1,282 @@
+
+.navigation {
+    position: relative;
+}
+
+.navbar{
+    @include ipad {
+        min-height: 0;
+    }
+}
+
+.navbar-default {
+    background-color: #fff;
+    margin: 0 -7px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+    position: relative;
+
+    @include ipad {
+        box-shadow: none;
+        border: none;
+        margin: -0.5px 0px;
+    }
+
+    @include laptop {
+        box-shadow: none;
+        border: none;
+        margin: -0.5px 0px;
+
+    }
+
+    @include tablet {
+        margin: 0.5px 0px;
+    }
+
+    .navbar-nav {
+
+        @include tablet {
+            margin: 7.5px -7px;
+        }
+
+        li {
+            position: relative;
+            margin-right: rem(36px);
+
+            @include desktop {
+                margin-right: rem(15px);
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: rem(13px);
+                right: 117%;
+                top: 39%;
+                background: #aaaaaa;
+
+                @include desktop {
+                    right: 110%;
+
+                }
+
+                @include ipad {
+                    display: none;
+                }
+
+                @include laptop {
+                    display: none;
+                }
+
+            }
+
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+
+            a {
+                font-size: rem(16px);
+                text-transform: uppercase;
+                padding-top: rem(26px);
+                padding-bottom: rem(26px);
+                border-bottom: 5px solid transparent;
+                transition: .3s;
+                border-left: none;
+
+                &:hover {
+                    color: $orange;
+                    border-bottom: 5px solid $green;
+                }
+
+                @include ipad {
+                    padding-top: rem(20px);
+                    padding-bottom: rem(20px);
+                    border-left: 5px solid transparent;
+                    border-bottom: none;
+                }
+
+                @include laptop {
+                    padding-top: rem(20px);
+                    padding-bottom: rem(20px);
+                    border-left: 5px solid transparent;
+                    border-bottom: none;
+
+                    &:hover {
+                        border-left: 5px solid $green;
+                        border-bottom: none;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include tablet {
+    .container > .navbar-header {
+        margin-left: 0;
+    }
+}
+
+.navbar-collapse.collapse {
+    padding-left: rem(58px);
+    padding-right: rem(58px);
+
+    @include ipad {
+
+        margin-left: 0;
+        padding-left: 15px;
+
+    }
+
+    @include laptop {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+
+}
+
+.navbar-toggle {
+
+    @include ipad {
+        display: block;
+        position: absolute;
+        border: 2px solid #fff;
+        margin-top: -62px;
+
+    }
+
+    @include laptop {
+
+        display: block;
+        position: absolute;
+        border: 2px solid #fff;
+        margin-top: -60px;
+
+
+    }
+
+    @include tablet {
+        margin-top: -66px;
+
+
+    }
+    
+    @include mobile {
+        margin-top: -53px;
+
+    }
+
+}
+
+.navbar-default .navbar-toggle {
+    &:focus {
+        border-color: #fff;
+        background-color: transparent;
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+
+    border-color: #fff;
+
+    .icon-bar {
+        background-color: #fff;
+    }
+
+    &:hover {
+        background: #fff;
+        .icon-bar {
+            background-color: $orange;
+        }
+
+    }
+
+}
+
+.navbar-brand {
+    height: 0;
+    padding: 0;
+}
+
+.collapse.in {
+    margin-left: -15px;
+    padding-left: 0;
+
+    @include ipad {
+        margin-left: 0;
+    }
+    @include laptop {
+        margin-left: 0;
+
+    }
+
+    @include tablet {
+        padding-left: 15px;
+
+    }
+
+
+
+}
+
+#navbar1{
+    @include mobile {
+        width:80%;
+    }
+}
+
+/* ---------- bootsrap navigation fix ----------*/
+@media (max-width: 1024px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    /*.navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }*/
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+        width: 50%;
+        background-color: #fff;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0;
+
+    }
+}
+
+
+
+
+
+
+
+

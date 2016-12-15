@@ -1,0 +1,71 @@
+@mixin box-shadow($value){
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+}
+
+@mixin inline-block($valign){
+    display: inline-block;
+    vertical-align: $valign;
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin transition($transition){
+    -webkit-transform: $transition;
+    -moz-transform: $transition;
+    -ms-transform: $transition;
+    -o-transform: $transition;
+    transform: $transition;
+}
+
+%clearfix{
+    &:after, &:before{
+        content: '';
+        display: table;
+     }
+    &:after{
+        clear: both;
+    }
+}
+
+@function rem($pixels){
+    @return $pixels / 16px + 0rem; //plus 0rem to convert to REM units
+}
+
+/*данная примесь позволяет любой контент @content обернуть в обертку
+(В данном случае @media query для десктопа)*/
+@mixin desktop{
+    @media screen and (max-width: 1366px){
+        @content;
+    }
+}
+
+@mixin ipad{
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin laptop{
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+

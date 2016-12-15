@@ -1,0 +1,182 @@
+.latest__blog {
+
+    .container {
+
+        text-align: center;
+
+        @include desktop {
+            width: 90%;
+        }
+
+    }
+
+    padding-top: rem(150px);
+    padding-bottom:rem(150px);
+
+    @include ipad {
+        padding-top: rem(100px);
+        padding-bottom:rem(100px);
+    }
+
+}
+
+.latest__blog_wrap {
+    margin: 0 auto;
+
+}
+
+.latest__blog_title {
+    text-align: center;
+    margin-bottom: rem(80px);
+    display: inline-block;
+
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 13px;
+        width: 43px;
+        height: 5px;
+        background: $orange;
+
+
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #898989;
+    }
+}
+
+.posts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.posts__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+    padding-bottom: rem(40px);
+    border-bottom:3px solid transparent;
+    transition: all .3s;
+
+    @include mobile {
+        width: 100%;
+        margin-bottom:rem(20px);
+
+    }
+
+
+    &:hover {
+        border-color: $grey;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+
+        }
+    }
+}
+
+.post__img {
+    margin-bottom: rem(35px);
+    max-height: rem(294px);
+    overflow: hidden;
+}
+
+.post__date {
+    position: absolute;
+    bottom: 29%;
+    left: 34%;
+
+    background: $orange;
+    color: #fff;
+    font-size: rem(15px);
+    text-transform: uppercase;
+    padding: rem(10px) rem(15px);
+    
+    @include ipad {
+        font-size: rem(13px);
+        padding: rem(5px) rem(10px);
+        bottom: 37%;
+
+
+    }
+    @include tablet {
+        bottom: 45%;
+
+    }
+    
+    @include mobile {
+        bottom: 36%;
+    }
+}
+
+.post__title {
+    font-size: rem(20px);
+    color: $black;
+    font-weight: 700;
+    margin-bottom: rem(17px);
+}
+
+.post__info {
+
+    margin-left: rem(27px);
+    span {
+        display: inline-block;
+    }
+
+    .icon {
+        margin-right: rem(10px);
+        color: $grey;
+    }
+    .text {
+        margin-right: rem(27px);
+        font-size: rem(14px);
+        color: $grey;
+    }
+
+
+    @include ipad {
+        margin-left: 0;
+
+        .icon {
+            margin-right:rem(5px);
+        }
+        .text{
+            margin-right: rem(15px);
+
+        }
+    }
+
+    @include tablet {
+        margin-left: rem(10px);
+
+        span{
+            margin-bottom:rem(5px);
+
+        }
+    }
+
+}
+
+.author, .comments, .share {
+    display: inline-block;
+}
+
+

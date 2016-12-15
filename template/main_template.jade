@@ -1,0 +1,40 @@
+include ../common/_mixins
+
+
+doctype  html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(href="css/external/bootstrap/bootstrap.min.css" rel="stylesheet")
+        link(href="css/external/bootstrap/bootstrap-slider.min.css" rel="stylesheet")
+
+        link(href="css/main.css" rel="stylesheet")
+        block title
+
+
+    body
+        .wrapper
+            .maincontent
+
+                <!-- / ========== header ========== \ !-->
+                include ../common/header
+
+                <!-- / ========== content ========== \ !-->
+                block content
+
+        <!-- / ========== footer ========== \ !-->
+        include ../common/footer
+
+        <!-- / ========== scripts ========== \ !-->
+        script(src='js/jquery-3.1.1.min.js')
+        script(src='js/bootstrap.min.js')
+        script(src='js/bootstrap-slider.min.js')
+        script(src='js/main.js')
+
+
+
+
+
+
+

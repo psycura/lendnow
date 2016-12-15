@@ -1,0 +1,220 @@
+.why{
+    background-image: url('../img/bg/why_bg.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding-top:rem(100px);
+
+    @include ipad {
+        padding-top:20px;
+    }
+
+    @include tablet {
+        background-position: right;
+        background-size:inherit;
+    }
+
+    .container{
+
+        .container{
+
+            @include desktop {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.why__text_block{
+    float: right;
+    width:67%;
+
+    @include ipad {
+        width: 58%;
+    }
+    @include tablet {
+        width: 100%;
+        float: none;
+    }
+}
+
+.why__title{
+    position: relative;
+    width: 95%;
+    margin-bottom:rem(100px);
+
+    @include ipad {
+        margin-bottom:rem(70px);
+    }
+
+    @include mobile {
+        margin-bottom:rem(100px);
+
+    }
+
+
+
+
+
+    h3{
+        margin-bottom:rem(3px);
+        font-size:rem(44px);
+
+        @include ipad {
+            font-size:rem(35px);
+
+        }
+        
+        @include laptop {
+            font-size:rem(30px);
+
+        }
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 13px;
+        width: 43px;
+        height: 5px;
+        background: $orange;
+
+
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #898989;
+    }
+}
+
+.why__subtitle{
+    font-size:rem(24px);
+    color: #818181;
+    line-height:rem(30px);
+
+    @include laptop {
+        font-size:rem(20px);
+
+    }
+}
+
+.why__item{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: rem(83px);
+
+    @include ipad {
+        margin-bottom:rem(30px);
+        display: block;
+        width: 100%;
+    }
+    
+    @include tablet {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: $black;
+            cursor: default;
+        }
+    }
+}
+.why__icon{
+    width:20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right:rem(6px);
+
+    @include ipad {
+        margin-right: 0;
+        width:16%;
+        text-align: right;
+    }
+    @include tablet {
+        width:20%;
+        margin-right:rem(20px);
+
+    }
+    
+    @include mobile {
+        .sprite{
+            zoom: .7;
+        }
+    }
+
+
+
+
+}
+
+.why__text{
+    width:68%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:rem(15px);
+    color: $black;
+
+    @include ipad {
+        width:80%;
+    }
+    
+    @include tablet {
+        width:66%;
+
+    }
+}
+
+
+
+.why__text_title{
+    font-size:rem(21px);
+    text-transform: uppercase;
+    margin-bottom:rem(20px);
+    
+    @include ipad {
+        font-size:rem(18px);
+        margin-bottom:rem(15px);
+
+    }
+
+    @include tablet {
+
+        margin-bottom:rem(20px);
+
+    }
+    
+    @include mobile {
+        font-size:rem(16px);
+        margin-bottom:rem(15px);
+        font-weight: 700;
+
+    }
+}
+
+.why__text_description{
+    font-size:rem(16px);
+    @include ipad {
+        font-size:rem(15px);
+
+    }
+    
+
+}
+
+

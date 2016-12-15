@@ -1,0 +1,335 @@
+
+.call-to-action {
+    background: $orange;
+    padding: rem(30px) 0;
+    .container {
+
+        @include desktop {
+            width: 90%;
+        }
+
+        @include ipad {
+            width: 1004px;
+        }
+
+        @include laptop {
+            width:100%;
+        }
+    }
+
+}
+
+.cta__text {
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    
+    @include ipad {
+        width:65%;
+    }
+    @include laptop {
+        width: 59%;
+    };
+    
+    @include tablet {
+        width:42%;
+    }
+    
+    @include mobile {
+        width: 100%;
+        text-align: center;
+        margin-bottom:20px;
+    }
+
+}
+
+.cta__text_title {
+    font-size: rem(36px);
+    margin-bottom: rem(7px);
+    color: #fff;
+    
+    @include tablet {
+        font-size: rem(30px);
+
+    }
+    
+    @include mobile {
+        font-size: rem(30px);
+        margin-bottom: rem(10px);
+        line-height: 1.2;
+
+
+    }
+
+
+}
+
+.cta__text_subtitle {
+    font-size: rem(30px);
+    color: #fff;
+    
+    @include tablet {
+        font-size: rem(25px);
+
+    }
+    @include mobile {
+        font-size: rem(25px);
+
+    }
+
+
+}
+
+.cta__button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 33%;
+    float: right;
+
+    @include mobile {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: rem(28px);
+        line-height: 1;
+        border-radius: 30px;
+        padding: 28px 71px;
+
+        @include tablet {
+            padding: 28px 60px;
+
+        }
+
+        @include mobile {
+            font-size: rem(27px);
+            border-radius: 18px;
+            padding: rem(19px) rem(53px);
+
+
+        }
+    }
+
+    @include ipad {
+        float: left;
+    }
+
+
+}
+
+.cta_bg {
+    background-image: url('../img/bg/cta-bg.png');
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    color: #fff;
+
+    @include ipad {
+        text-align: center;
+    }
+    
+    @include mobile {
+        background-position-y:50%;
+    }
+
+    .cta__text_block {
+        @include ipad {
+            width: 100%;
+        }
+
+        @include laptop {
+            width:90%;
+            margin:0 auto;
+            margin-bottom: rem(30px);
+
+        }
+    }
+
+
+    .cta__text_title {
+        font-size: rem(39px);
+        font-weight: 700;
+        line-height: rem(50px);
+        margin-bottom: rem(25px);
+        
+        @include mobile {
+            font-size: rem(35px);
+
+        }
+    }
+    .cta__text_subtitle {
+        font-size: rem(20px);
+        line-height: 1.1;
+        margin-bottom: rem(35px);
+        
+        @include mobile {
+            font-size: rem(18px);
+            margin-bottom: rem(25px);
+
+        }
+
+    }
+
+    .cta__light-text {
+        @include raleway('light', rem(30px))
+    }
+
+    .cta__button {
+        float: left;
+
+        @include ipad {
+            float: none;
+            text-align: center;
+            width: 100%;
+
+        }
+        .btn {
+            font-size: 35px;
+            border-radius: 30px;
+            padding: 20px 60px;
+
+            @include mobile {
+                font-size: rem(27px);
+                border-radius: 18px;
+                padding: rem(19px) rem(53px);
+
+
+            }
+
+
+        }
+    }
+}
+
+.cta__text_block {
+    width: 69%;
+    margin-bottom: rem(60px);
+}
+
+.green-bg {
+    background: $green;
+    color: #fff;
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    text-align: center;
+
+    .cta__text_title {
+        font-size: rem(35px);
+        text-align: center;
+        margin-bottom: rem(25px);
+
+    }
+    .cta__button {
+        float: none;
+        display: inline-block;
+        width: auto;
+        .btn {
+            float: none;
+            margin: 0 auto;
+            margin-bottom: rem(25px);
+            padding: rem(25px) rem(70px);
+            display: inline-block;
+            @include mobile {
+                font-size: rem(27px);
+                border-radius: 18px;
+                padding: rem(19px) rem(53px);
+
+
+            }
+
+
+        }
+    }
+
+}
+
+.btn-danger {
+    background: $orange;
+    border: transparent;
+
+    &:hover {
+        background: #AD512F;
+    }
+}
+
+.warning__text {
+    font-size: rem(22px);
+    width: 53%;
+    margin: 0 auto;
+    line-height: 1.3;
+
+    @include mobile {
+        width: 100%;
+    };
+
+    .warning {
+        font-weight: 700;
+    }
+    a {
+        color: $black;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+.cta_orange{
+    padding-top:rem(65px);
+    padding-bottom:rem(50px);
+    .cta__text_title{
+        text-align: center;
+        font-size:rem(35px);
+        font-weight: 700;
+        margin-bottom:rem(20px);
+        
+        @include mobile {
+            font-size:rem(30px);
+
+        }
+
+    }
+
+    .cta__text_subtitle{
+        text-align: center;
+        font-size:rem(35px);
+        font-weight: 700;
+        margin-bottom:rem(20px);
+        
+        @include mobile {
+            font-size:rem(25px);
+
+        }
+    }
+
+    .cta__button{
+        float: none;
+        width:auto;
+        text-align: center;
+
+        .btn{
+            @include mobile {
+                font-size: rem(20px);
+                border-radius: 18px;
+                padding: rem(15px) rem(40px);
+
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+

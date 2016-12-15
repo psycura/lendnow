@@ -1,0 +1,140 @@
+.promices{
+    padding-top:rem(110px);
+    padding-bottom: rem(100px);
+    background: #fcfcfc;
+    @include mobile {
+        padding-top:rem(50px);
+        padding-bottom: rem(50px);
+    }
+
+    .container{
+
+        @include desktop {
+            width: 90%;
+        }
+    }
+}
+
+h3{
+    @include mobile {
+        font-size:rem(35px);
+
+    }
+}
+
+.promices__title{
+    margin-bottom:rem(142px);
+    position: relative;
+
+    @include ipad {
+        margin-bottom:rem(100px);
+        
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 13px;
+        width: 43px;
+        height: 5px;
+        background: $orange;
+
+
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: rem(-30px);
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #898989;
+    }
+}
+
+.promices__items_list{
+    width: 100%;
+    
+    @include tablet {
+        text-align: center;
+    }
+
+}
+
+.promices__item{
+    max-width:33.1%;
+    display: inline-block;
+    @extend %clearfix;
+
+
+    @include ipad {
+        max-width: 29%;
+        margin-left: rem(33px);
+    }
+    
+    @include tablet {
+        max-width:90%;
+        display: block;
+
+    }
+    
+    @include mobile {
+        margin-bottom:rem(20px);
+
+    }
+
+
+}
+
+.promice__item_icon{
+    margin-bottom:rem(37px);
+
+    @include tablet {
+        margin-right:58px;
+        width:30%;
+        float: left;
+
+    }
+
+    @include mobile {
+
+        display: inline-block;
+        vertical-align: top;
+        margin-right:rem(10px);
+        .sprite{
+            zoom: .35;
+        }
+    }
+
+}
+
+.promice__item_text{
+    @include tablet {
+        width:78%;
+        text-align: left;
+    }
+
+    @include mobile {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+    }
+}
+
+.promice__item_title{
+    font-size:rem(29px);
+    font-weight:700;
+    color: $orange;
+    text-transform: uppercase;
+    margin-bottom:rem(24px);
+
+}
+
+.promice__item_desc{
+    font-size:rem(16px);
+    color: $grey;
+}
+
+
+
+

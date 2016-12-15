@@ -1,0 +1,372 @@
+.payday-loans {
+    position: relative;
+
+    .container {
+        @include desktop {
+            width: 90%;
+        }
+
+    }
+
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
+
+    @include ipad {
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
+
+    }
+    
+    @include mobile {
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
+    }
+
+    ul {
+        @include oswald('regular', rem(20px));
+
+        @include ipad {
+            font-size: rem(18px);
+
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .button {
+        font-size: rem(20px);
+        text-transform: none;
+
+    }
+    .how__button {
+        background: $black;
+        color: #fff;
+        padding: rem(15px) rem(25px);
+
+    }
+    .button_green {
+        margin-left: rem(10px);
+        padding: rem(15px) rem(25px);
+    }
+}
+
+.section-left {
+    background: #f7f7f7;
+    .left__block {
+        width: 70%;
+        float: left;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+    .right__block {
+        width: 30%;
+        float: right;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+    .bullets__block {
+        width: 35%;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom:rem(20px);
+        }
+    }
+    .checks__block {
+        width: 55%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+    @include ipad {
+        .left__block {
+            width: 100%;
+        }
+        .right__block {
+            display: none;
+        }
+    }
+
+    .section__title {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: rem(-30px);
+            left: 13px;
+            width: 43px;
+            height: 5px;
+            background: $orange;
+
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: rem(-30px);
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background: #898989;
+        }
+    }
+
+}
+
+
+.section-right {
+    .left__block {
+        width: 30%;
+        float: left;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+    .right__block {
+        width: 60%;
+        float: right;
+        
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    @include ipad {
+        .left__block {
+            display: none;
+        }
+        .right__block {
+            width: 70%;
+        }
+    }
+    
+    @include mobile {
+
+        .right__block {
+            width: 100%;
+        }
+    }
+
+
+    .bullets__block {
+        width: 41%;
+        @include mobile {
+            width: 100%;
+            margin-bottom:rem(20px);
+        }
+    }
+    .checks__block {
+        width: 58%;
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+
+    .check__item {
+        margin-left: rem(72px);
+    }
+    .section__title {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: rem(-30px);
+            left: 13px;
+            width: 43px;
+            height: 5px;
+            background: $orange;
+
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: rem(-30px);
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background: #898989;
+        }
+    }
+
+}
+
+.section__title {
+    margin-bottom: rem(100px);
+    h3 {
+        font-size: rem(35px);
+        margin-bottom: rem(7px);
+    }
+
+}
+
+.section__subtitle {
+    font-size: rem(24px);
+    color: #818181;
+}
+
+.section__info {
+    margin-bottom: rem(21px);
+
+}
+
+.bullets__block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bullet__item {
+    margin-bottom: rem(23px);
+    position: relative;
+    margin-left: rem(42px);
+
+    &:before {
+        content: '';
+        width: 1.11111rem;
+        height: 1.11111rem;
+        border-radius: 50%;
+        background: $green;
+        position: absolute;
+        right: 106%;
+        top: 50%;
+        margin-top: rem(-13px);
+    }
+
+}
+
+.checks__block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.check__item {
+    margin-bottom: rem(24px);
+    position: relative;
+    margin-left: rem(74px);
+    text-transform: none;
+
+    &:before {
+        content: '';
+        width: rem(32px);
+        height: rem(32px);
+        position: absolute;
+        right: 103%;
+        top: 50%;
+        margin-top: rem(-20px);
+        background-image: url(../img/decor/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        background-position: -74px -5px;
+
+        @include tablet {
+            width: 3rem;
+            height: 3rem;
+        }
+
+    }
+}
+
+.section__desc {
+    @include raleway('regular', rem(20px));
+    color: #1b1b1b;
+    margin-bottom: rem(50px);
+    width: 83%;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.section__how_button {
+    .btn {
+        font-size: rem(24px);
+        text-transform: none;
+
+        @include ipad {
+            font-size: rem(20px);
+
+        }
+        
+        @include mobile {
+            margin-bottom:rem(20px);
+
+        }
+    }
+    .btn-success {
+        margin-left: rem(13px);
+        padding: rem(15px) rem(30px);
+
+        @include mobile {
+            margin-left: 0;
+        }
+
+    }
+
+    .btn-primary {
+        background: $black;
+        padding: rem(15px) rem(25px);
+
+        &:hover {
+            background: $orange;
+            border-color: transparent;
+        }
+
+    }
+
+}
+
+.section__image_right {
+    position: absolute;
+    left: 61%;
+    top: 21%;
+    
+    @include ipad {
+        left: 75%;
+        top: 25%;
+    }
+}
+
+.section__image_left {
+    position: absolute;
+    right: 63%;
+    top: 22%;
+
+    @include ipad {
+        right: 70%;
+        top: 25%;
+    }
+}
+
+.section__image_right, .section__image_left {
+
+    @include desktop {
+        width: rem(450px);
+
+    }
+
+    @include ipad {
+        width: 23%;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

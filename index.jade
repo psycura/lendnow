@@ -1,0 +1,475 @@
+extends template/main_template
+
+block title
+    title Main Page
+
+block content
+    .container
+        +navigation
+
+    <!-- / ========== baner ========== \ !-->
+    section.main__banner_home
+        .container
+
+             .col-md-7.banner__text_block
+                .banner__title
+                    h2 YOU COULD GET UP TO €5000!*
+                    .banner__subtitle
+                        | Payday Loans - Look no further!
+                .banner__payday-slider
+                    form(id='loan-form').payday-slider
+                        .form__title
+                            |Select your Payday Loan Amount
+                        input(id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="100" data-slider-max="5000" data-slider-step="10" data-slider-value="1670")
+                        .min-number.slider-values
+                            |€100
+                        .max-number.slider-values
+                            |€5000
+                .slider__submit-button
+                    input(type="submit" value='Apply Now' form='loan-form').btn.btn-success.btn-lg
+
+
+
+
+    <!-- / ========== call to action ========== \ !-->
+    section.call-to-action
+        .container
+            .col-xs-12.col-md-8.cta__text
+                .cta__text_title
+                    | Join Thousands Of Satisfied Customers
+                .cta__text_subtitle
+                    | And Get the funds you NEED today !
+            .col-xs-12.col-md-4.cta__button
+                a(href="#").btn.btn-success.btn-lg Join Us Now
+
+
+
+    <!-- / ========== welcome ========== \ !-->
+    section.welcome
+        .container
+            .welcome__left
+                .welcome__title
+                    h3.title welcome to LENDNOW
+                    .welcome__subtitle
+                        | we are professional & reliable
+                .welcome__text
+                    p
+                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
+                        | tempor incididunt labore dolore magna aliqua. Ute enim ad minim veniam
+                        | quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit inv luptate velit esse
+                        | cillum dolore eu fugiat nulla.
+                    p
+                        | Pariatur excepteur sint occaecat cupidat at non proident sunt in culpa
+                        | qui officia deserunt.Lorem ipsum dolor sit amet consectetur .
+
+            .welcome__right
+                .welcome__video
+                    img(src="img/content/VIDEO-SLIDE1.jpg" alt="").video__placeholder
+
+
+
+    <!-- / ========== info strip ========== \ !-->
+    section.info__strip
+        .container
+            .info__wrap
+                .info__item
+                    .info__icon
+                        i.sprite.sprite-profile
+                    .info__text
+                        .info__title
+                            | 1MM+
+                        .info__subtitle
+                            | CUSTOMERS SERVED
+                .info__item
+                    .info__icon
+                        i.sprite.sprite-inspection
+                    .info__text
+                        .info__title
+                            | €150MM
+                        .info__subtitle
+                            | LOANS PROVIDED
+                .info__item
+                    .info__icon
+                        i.sprite.sprite-projects
+                    .info__text
+                        .info__title
+                            | 2-5 min
+                        .info__subtitle
+                            | TO APPROVE
+                .info__item
+                    .info__icon
+                        i.sprite.sprite-clock
+                    .info__text
+                        .info__title
+                            | 24 Hours
+                        .info__subtitle
+                            | OPEN
+
+
+
+    <!-- / ========== promices ========== \ !-->
+    section.promices
+        .container
+            .promices__title
+                h3 Our Promices
+            .promices__items_list
+                .promices__item
+                    .promice__item_icon
+                        i.sprite.sprite-target
+                    .promice__item_text
+                        .promice__item_title
+                            | Accurate Decisions
+                        .promice__item_desc
+                            | Lorem ipsum dolor sit amet consec tur
+                            | adipisicing elit sed do eius mod tempor
+                            | incididunt
+                .promices__item
+                    .promice__item_icon
+                        i.sprite.sprite-trophy
+                    .promice__item_text
+                        .promice__item_title
+                            | RELIABLE SYSTEM
+                        .promice__item_desc
+                            | Lorem ipsum dolor sit amet consec tur
+                            | adipisicing elit sed do eius mod tempor
+                            | incididunt
+                .promices__item
+                    .promice__item_icon
+                        i.sprite.sprite-phone-1
+                    .promice__item_text
+                        .promice__item_title
+                            | FAST CUSTOMER SERVICE
+                        .promice__item_desc
+                            | Lorem ipsum dolor sit amet consec tur
+                            | adipisicing elit sed do eius mod tempor
+                            | incididunt
+
+
+    <!-- / ========== why ========== \ !-->
+    section.why
+        .container
+            .why__text_block
+                .why__title
+                    h3 WHy people choose us
+                    .why__subtitle
+                        | It's a totally new way of borrowing.
+                        | Our unique technology gives you an online decision in minutes.
+                ul.why__list
+                    li.why__item
+                        a(href="#").why__link
+                            .why__icon
+                                i.sprite.sprite-percent
+                            .why__text
+                                .why__text_title
+                                    | Lowest Representative APR available
+                                .why__text_description
+                                    | APR takes into account the amount of interest that will be charged
+                                    | to you for borrowing acertain amount of money
+                    li.why__item
+                        a(href="#").why__link
+                            .why__icon
+                                i.sprite.sprite-suitcase
+                            .why__text
+                                .why__text_title
+                                    | Potential to payoff your loan early
+                                .why__text_description
+                                    | Some lenders and brokers arrange loans with
+                                    | flexibility at the center of what they do.
+                    li.why__item
+                        a(href="#").why__link
+                            .why__icon
+                                i.sprite.sprite-moneybag
+                            .why__text
+                                .why__text_title
+                                    | Fair Interest rates
+                                .why__text_description
+                                    | We won’t try and fool you by luring you in on
+                                    | a low interest rate only for it to change later
+                    li.why__item
+                        a(href="#").why__link
+                            .why__icon
+                                i.sprite.sprite-coins-and-hand
+                            .why__text
+                                .why__text_title
+                                    | We can arrange loans up to £5000
+                                .why__text_description
+                                    | Apply today and the loan you are looking for
+                                    | could be arranged by our lenders or brokers
+                                    | within a few hours
+
+    <!-- / ========== call to action #2 ========== \ !-->
+    section.call-to-action.cta_bg
+        .container
+            .cta__text_block
+                .cta__text_title
+                    | Just because You're Short on Cash
+                    | doesn’t mean you're Short on Options
+                .cta__text_subtitle
+                    | We connect you with online payday, installment, cash advance, and title loan lenders
+                    | eager to help you get the funds you need as soon as the next business day!
+                .cta__light-text
+                    | Easy Application, No Obtaining, Same Day Approval
+            .cta__button
+                a(href="#").btn.btn-success.btn-lg APPLY NOW!
+
+
+
+
+
+    <!-- / ========== payday loans sections========== \ !-->
+    +sectionLeft('PAYDAY LOANS UK','img/content/bag.png')
+    +sectionRight('INSTANT PAYDAY LOANS','img/content/wallet.png')
+    +sectionLeft('PAYDAY LOANS DIRECT LENDER','img/content/credit.png')
+
+    <!-- / ========== call to action green ========== \ !-->
+    section.call-to-action.green-bg
+        .container
+            .cta__text_title
+                | Get matched with a qualified lender or broker today!
+            .cta__button
+                a(href="#").btn.btn-danger.btn-lg APPLY NOW!
+            .warning__text
+                span.warning Warning:&nbsp;
+                span.text
+                | Late repayments can cause you serious money problems.
+                | For help, go to&nbsp;
+                a(href="http://www.moneyadviceservice.org.uk") moneyadviceservice.org.uk
+    <!-- / ========== deals ========== \ !-->
+    section.deals
+        .deals__upper
+            .container
+                .deals__title
+                    h3 PAYDAY LOANS DEALS
+                .deals__services
+                    ul.deals__list
+                        li.deals__item
+                            a(href="#").deals__link
+                                .deals__img
+                                    img(src="img/content/couple.jpg" alt="").deals__pic
+                                .deals__text
+                                    | PAYDAY LOANS UK
+                        li.deals__item
+                            a(href="#").deals__link
+                                .deals__img
+                                    img(src="img/content/driver.jpg" alt="").deals__pic
+                                .deals__text
+                                    | INSTANT PAYDAY
+                                    | LOANS
+                        li.deals__item
+                            a(href="#").deals__link
+                                .deals__img
+                                    img(src="img/content/man.jpg" alt="").deals__pic
+                                .deals__text
+                                    | BAD CREDIT
+                                    | PAYDAY LOANS
+                        li.deals__item
+                            a(href="#").deals__link
+                                .deals__img
+                                    img(src="img/content/ok.jpg" alt="").deals__pic
+                                .deals__text
+                                    | PAYDAY LOANS
+                                    | NO CREDIT CHECK
+
+        .deals__bottom
+            .container
+                .deals_text_block
+                    .deals__cta_text
+                        | When Banks Say "NO!" Lendnow Says "YES!"
+                    .deals__cta_button
+                        a(href="#").btn.btn-danger.btn-lg LEARN MORE
+
+    <!-- / ========== blog ========== \ !-->
+    section.latest__blog
+        .container
+            .latest__blog_wrap
+                .latest__blog_title
+                    h3 LATEST BLOG POST
+                .latest__blog_grid
+                    ul.posts__list
+                        li.posts__item
+                            a(href="#").posts__link
+                                .post__img
+                                    img(src="img/content/blog-family.jpg" alt="").post__pic
+                                .post__date
+                                    | 20 OCT 2016
+                                .post__title
+                                    | BLOG TITLE GOES HERE
+                                .post__info
+                                    .author
+                                        span.icon
+                                            i.fa.fa-user-o
+                                        span.text LendNow
+                                    .comments
+                                        span.icon
+                                            i.fa.fa-comment-o
+                                        span.text 105
+                                    .share
+                                        span.icon
+                                            i.fa.fa-share-alt
+                                        span.text Share
+                        li.posts__item
+                            a(href="#").posts__link
+                                .post__img
+                                    img(src="img/content/blog-friend.jpg" alt="").post__pic
+                                .post__date
+                                    | 20 OCT 2016
+                                .post__title
+                                    | BLOG TITLE GOES HERE
+                                .post__info
+                                    .author
+                                        span.icon
+                                            i.fa.fa-user-o
+                                        span.text LendNow
+                                    .comments
+                                        span.icon
+                                            i.fa.fa-comment-o
+                                        span.text 105
+                                    .share
+                                        span.icon
+                                            i.fa.fa-share-alt
+                                        span.text Share
+                        li.posts__item
+                            a(href="#").posts__link
+                                .post__img
+                                    img(src="img/content/blog-driver.jpg" alt="").post__pic
+                                .post__date
+                                    | 20 OCT 2016
+                                .post__title
+                                    | BLOG TITLE GOES HERE
+                                .post__info
+                                    .author
+                                        span.icon
+                                            i.fa.fa-user-o
+                                        span.text LendNow
+                                    .comments
+                                        span.icon
+                                            i.fa.fa-comment-o
+                                        span.text 105
+                                    .share
+                                        span.icon
+                                            i.fa.fa-share-alt
+                                        span.text Share
+
+    <!-- / ========== rules ========== \ !-->
+    section.rules
+        .container
+            .col-md-7
+                .rules__left
+                    .rules__title
+                        h3 THE RULES
+                    .rules__desc
+                        | Meet the rules? Submit your details using our application form and we'll have you processed in moments.*Subject to lenders/brokers requirements. Approval is not guaranteed, and may take up to 30 minutes and funds will be deposited the same working day in most cases
+                        | for loans up to €1000. Higher amounts may
+                        | require longer to approve and process. If you have bad credit the application process may take longer.
+                    .table__head
+                        .table__title
+                            | Payday Loans Online APR Examples
+                        .table__subtitle
+                            | Comparison of the top online payday loan companies.
+                    table.table.rules__example_table
+
+                        tr
+                            td.table-1-col Payday Loans Now
+                            td.table-2-col 728.9% APR
+                            td.table-3-col Not a Direct Lender
+                        tr
+                            td.table-1-col Wonga
+                            td.table-2-col 1509% APR
+                            td.table-3-col Direct Lender
+                        tr
+                            td.table-1-col Wizzcash
+                            td.table-2-col 1265% APR
+                            td.table-3-col Direct Lender
+                        tr
+                            td.table-1-col QuickQuid
+                            td.table-2-col 1270% APR
+                            td.table-3-col Direct Lender
+                        tr
+                            td.table-1-col Peachy
+                            td.table-2-col 1255.66% APR
+                            td.table-3-col Direct Lender
+                        tr
+                            td.table-1-col Cash Float
+                            td.table-2-col 1116% APR
+                            td.table-3-col Direct Lender
+                        tr
+                            td.table-1-col Piggy Bank
+                            td.table-2-col 1270% APR
+                            td.table-3-col Direct Lender
+                    .warning__text
+                        span.warning Warning:&nbsp;
+                        span.text
+                        | Late repayments can cause you serious money problems.
+                        | For help, go to&nbsp;
+                        a(href="http://www.moneyadviceservice.org.uk") moneyadviceservice.org.uk
+                    a(href="#").btn.btn-success.btn-lg.btn-lg Apply Now
+
+
+
+            .col-md-5
+                .rules__right
+
+                    .rules__right_title
+                        span.green LENDNOW&nbsp;
+                        span is the right choice for you if:
+                    .rules__right_text
+                        .rules__check_item
+                            .check__title
+                                | Minimum age of 18
+                                .check__icon
+                                    i
+                            .check__text
+                                | You must be 18 or older.
+                        .rules__check_item
+                            .check__title
+                                | Must be a UK Resident
+                                .check__icon
+                                    i
+                            .check__text
+                                | Must be a current resident of the United Kingdom.
+                        .rules__check_item
+                            .check__title
+                                | Must have an income
+                                .check__icon
+                                    i
+                            .check__text
+                                | You must have an income every month whether it be benefits or a job.
+                        .rules__check_item
+                            .check__title
+                                | Valid UK Address
+                                .check__icon
+                                    i
+                            .check__text
+                                | Your home address must be valid and be in the UK Address Register.
+
+    <!-- / ========== call to action orange ========== \ !-->
+    section.call-to-action.cta_orange
+        .container
+            .cta__text_title
+                | WHAT ARE YOU WAITING FOR ?
+            .cta__text_subtitle
+                | GET APPROVED TODAY !
+            .cta__button
+                a(href="#").btn.btn-success.btn-lg GET STARTED TODAY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

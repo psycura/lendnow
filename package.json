@@ -1,0 +1,16 @@
+{
+  "name": "lennow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-slider": "^9.5.3",
+    "gulp-jade": "^1.1.0",
+    "watch": "^1.0.1"
+  }
+}

@@ -1,0 +1,281 @@
+.rules {
+
+    .container {
+
+        @include desktop {
+            width: 90%;
+        }
+    }
+
+    background: #fbfbfb;
+    background-image: url('../img/bg/man-people-space-desk.jpg');
+    background-position: right;
+    background-size: 47%;
+    background-repeat: no-repeat;
+
+    padding-top: rem(100px);
+    padding-bottom: rem(50px);
+
+    .warning__text {
+        font-size: rem(18px);
+        font-weight: 700;
+        color: $orange;
+        width: 100%;
+        margin-bottom: rem(35px);
+        line-height: 1.6;
+
+    }
+
+    .btn {
+        text-transform: none;
+        padding: rem(15px) rem(30px);
+
+    }
+
+    @include desktop {
+        background-size: 50%;
+        padding-top: rem(70px);
+        padding-bottom: rem(50px);
+        background-position-x: 110%;
+    }
+    
+    @include ipad {
+        padding-bottom:0;
+    }
+
+    @include laptop {
+        background-size: 105%;
+        background-position-y: -112%;
+    }
+    
+    @include tablet {
+        background-position-y: -195%;
+
+    }
+
+}
+
+.rules__left {
+    width: 90%;
+
+    @include ipad {
+        width: 94%;
+    }
+    
+    @include tablet {
+        width: 100%;
+    }
+
+    margin-bottom:rem(60px);
+}
+
+.rules__title {
+    margin-bottom: rem(50px);
+
+    @include desktop {
+        margin-bottom:rem(35px);
+
+    }
+
+    @include ipad {
+        margin-bottom:rem(30px);
+
+    }
+}
+
+.rules__desc {
+    font-size: rem(25px);
+    margin-bottom: rem(40px);
+    line-height: 1.44;
+    
+    @include desktop {
+        font-size: rem(20px);
+        margin-bottom: rem(30px);
+        line-height: 1.2;
+    }
+
+    @include ipad {
+        font-size: rem(17px);
+        margin-bottom: rem(20px);
+    }
+}
+
+.table__title {
+    background: $orange;
+    font-size: rem(25px);
+    color: #fff;
+    font-weight: 700;
+    padding: rem(7px) rem(20px);
+    margin-bottom: rem(15px);
+    width: 86%;
+    
+    @include ipad {
+        font-size: rem(20px);
+        padding: rem(7px) rem(10px);
+        margin-bottom: rem(10px);
+
+
+    }
+
+}
+
+.table__subtitle {
+    font-size: rem(20px);
+    color: #737373;
+    margin-bottom: rem(35px);
+    
+    @include ipad {
+        font-size: rem(17px);
+        margin-bottom: rem(25px);
+
+    }
+
+}
+
+.table__head {
+    margin-bottom: rem(40px);
+    @include ipad {
+        margin-bottom: rem(30px);
+
+    }
+
+}
+
+.table {
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+
+            }
+        }
+    }
+}
+
+.rules__example_table {
+    width: 90%;
+
+    td {
+        font-size: rem(18px);
+        height: rem(50px);
+        
+        @include ipad {
+            font-size: rem(16px);
+            height: rem(35px);
+        }
+
+    }
+
+}
+
+.table-2-col {
+    font-weight: 700;
+}
+
+.rules__right {
+
+    color: $green;
+    
+    @include laptop {
+        width: 100%;
+    }
+    
+
+}
+
+.rules__right_title {
+    font-size: rem(35px);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.25;
+
+    margin-bottom: rem(60px);
+    .green {
+        color: $green;
+    }
+    
+    @include ipad {
+        font-size: rem(25px);
+        margin-bottom: rem(35px);
+
+    }
+
+    @include mobile {
+        color: $green;
+    }
+}
+
+.rules__check_item {
+    margin-left: rem(107px);
+    margin-bottom: rem(50px);
+    position: relative;
+
+    @include mobile {
+        margin-left:rem(38px);
+    }
+
+    .check__title {
+        text-transform: uppercase;
+        color: $green;
+        font-size: rem(30px);
+        font-weight: 700;
+        margin-bottom: rem(13px);
+
+        @include desktop {
+            font-size: rem(22px);
+        }
+        
+        @include ipad {
+            font-size: rem(18px);
+
+        }
+    }
+
+    .check__text {
+        color: #fff;
+        font-size: rem(25px);
+        line-height: 1.3;
+
+        @include desktop {
+            font-size: rem(17px);
+
+        }
+        
+        @include ipad {
+            font-size: rem(15px);
+
+        }
+        
+        @include mobile {
+            color: $green;
+        }
+    }
+
+    .check__icon {
+        position: absolute;
+        right: 110%;
+        top: -15%;
+
+        @include desktop {
+            top: 0;
+        }
+
+        i {
+            background-image: url(../img/decor/spritesheet.png);
+            background-repeat: no-repeat;
+            display: block;
+            width: 59px;
+            height: 59px;
+            background-position: -5px -5px;
+
+            @include mobile {
+                zoom: .5;
+            }
+
+        }
+
+    }
+}
+
+

@@ -1,0 +1,99 @@
+.welcome {
+    background: #fbfbfb;
+    padding-top: rem(124px);
+    padding-bottom:rem(100px);
+
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+
+        @include desktop {
+            width: 90%;
+        }
+    }
+    
+    @include mobile {
+        padding-top: rem(50px);
+        padding-bottom:rem(50px);
+
+    }
+}
+
+.welcome__left {
+    width: 51%;
+    float: left;
+    
+    @include desktop {
+        width:45%;
+    }
+    
+    @include ipad {
+        width:90%;
+    }
+}
+
+.welcome__title{
+    margin-bottom:rem(83px);
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: rem(-38px);
+        left: 13px;
+        width: 43px;
+        height: 5px;
+        background: $orange;
+        
+
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: rem(-38px);
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #898989;
+    }
+}
+
+h3 {
+    font-size: rem(54px);
+    text-transform: uppercase;
+    font-weight:700;
+    margin-bottom:rem(10px);
+    
+    @include desktop {
+        font-size: rem(45px);
+
+    }
+}
+
+.welcome__subtitle{
+    font-size:rem(24px);
+    text-transform: uppercase;
+}
+
+.welcome__text{
+
+        color: #666666;
+    p{
+        margin-bottom:rem(34px);
+        line-height:rem(30px);
+    }
+
+
+}
+
+.welcome__right {
+    width: 49%;
+    text-align: right;
+    float: right;
+
+    @include ipad {
+        width:90%;
+        text-align: center;
+        float: none;
+    }
+}
+
