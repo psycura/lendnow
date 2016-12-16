@@ -1,0 +1,75 @@
+extends ../template/inner
+
+block title
+    title Contact Us
+
+block content
+    <!-- / ========== baner ========== \ !-->
+    section.contact-us.main__banner_home
+        .container
+            +navigation
+            .col-sm-12.col-md-6.banner__subscription-form
+                .sf__title.title
+                    h3 CONNECT WITH US!
+                .sf__text
+                    | Our friendly loan specialists are here to help.
+                    | We are dedicated to answering your questions
+                    | by phone and emails.
+                form.sf__form
+
+                    input(id='name' type="text" placeholder="Your Complete Name").form-control
+                    input(id='email' type="email" placeholder="Your Email Address").form-control
+                    .form-group
+                        button(type='submit').btn.btn-sm
+                            .btn__text
+                                |SUBSCRIBE TO OUR NEWSLETTER
+
+    <!-- / ========== main content ========== \ !-->
+    section.contact-us_form
+        .container
+            .cf__text-block.col-md-12
+                .cf__main-title
+                    h3 Contact Form
+                .cf__main-text
+                    |We aim to reply to all emails and contact forms within 24 business hours. We appreciate you understanding that calling prior to this time frame will not guarantee a faster response. Please refer to our hours listed above.
+
+            .cf__main-form
+                form.cf__form
+                    .col-md-6
+                        .form-group
+                            label(for='firstName') First Name:
+                            input(id='firstName' type="text").form-control
+                        .form-group
+                            label(for='mail') Email:
+                            input(id='mail' type="email").form-control
+
+
+                    .col-md-6
+                        .form-group
+                            .form-group
+                                label(for='lastName') Last Name:
+                                input(id='lastName' type="text").form-control
+                            .form-group
+                                label(for='phone') Phone Number:
+                                input(id='phone' type="phone").form-control
+                    .col-md-12
+                        .form-group
+                            label(for='comments') Enter your comments below::
+                            textarea(id='comments' rows='5').form-control
+                    .col-md-12
+                        .checkbox
+                            label
+                                input(type="checkbox")
+                                |By checking this box, you agree to allow the information you provide to be used for Speedy Cash marketing purposes, per our model release form.
+                    .col-md-12
+                        .form-group
+                            button(type='submit').btn.btn-lg
+                                | SUBMIT
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+footer.footer
+
+    .row
+        .container
+            .col-sm-12.col-md-3.text__block
+                .logo
+                    a(href="#").logo__link
+                        img(src="../img/logo/LendNow.png" alt="").logo__pic
+                .description
+                    | Lorem ipsum dolor sit ame consectetur
+                    | adoisicing elit sed do eiusmod tempor
+                    | inciidunut labore et dolore magna aiqua
+                    | at enim adminim veniam quis nostrud.
+                    | Lorem ipsum dolor sit amet adipisicing
+                    | elit do eiusmod tempor incididunt.
+                .socials
+                    +socials
+
+            .col-xs-12.col-sm-4.col-md-3.about-us__block
+                .title
+                    |About Us
+                ul.about-us__list
+                    -
+                        var aboutItems={
+                        'Blog':'#',
+                        'Company History':'#',
+                        'Frequently Asked Questions':'#',
+                        'Business Loan Types':'#',
+                        'Business Resources':'#',
+                        'Terms of Use':'#',
+                        'Prestamos USA':'#'
+                        }
+
+                    each pageUrl,pageName in aboutItems
+                        li.about-us_item
+                            a(href="#{pageUrl}").about-us__link=pageName
+
+
+            .col-xs-12.col-sm-4.col-md-3.blogs__block
+                .title
+                    |Blogs
+                ul.blog__list
+                    -for (var i=0; i<3; i++)
+                        li.blog_item
+                            a(href="#").post__link
+                                .post__pic
+                                .post__desc
+                                    .post__excerpt
+                                        | Lorem ipsum dolor sit amt
+                                        | elit sed do labore
+                                    .post__date_small
+                                        |15 October 2015
+
+            .col-xs-12.col-sm-4.col-md-3.contacts-info__block
+                .title
+                    | Contact Info
+                ul.contact__list
+                    -for(var i=0; i<3; i++)
+                        li.contact_item
+                            a(href="#").contact__link
+                                if i==0
+                                    .contact__icon.sprite.sprite-phone-2
+                                    .contact__text
+                                        .contact__title
+                                            | ADDRESS
+                                        .contact__desc
+                                            | 2150 Coral Way | Suite 1A Miami, FL 33145
+                                else if i==1
+                                    .contact__icon.sprite.sprite-phone
+                                    .contact__text
+                                        .contact__title
+                                            | call us 24/7
+                                        .contact__desc
+                                            | 1-866-257-2673
+                                else if i == 2
+                                    .contact__icon.sprite.sprite-email-1
+                                    .contact__text
+                                        .contact__title
+                                            | email us
+                                        .contact__desc
+                                            | mail@Goukapital.com
+                .socials
+                    +socials
+
+    .copyright
+        .container
+            .copyright__text
+                |© 2016 Lendnow, Inc. | All Rights Reserved
+

@@ -1,0 +1,310 @@
+.main__banner_home {
+    position: relative;
+    background-image: url('../img/bg/home-banner-bg.jpg');
+
+    background-position: 90% bottom;
+    background-repeat: no-repeat;
+    padding-top: rem(100px);
+    padding-bottom: rem(37px);
+    background-size: contain;
+
+    @include ipad {
+        background-position-x: 95%;
+        background-size: 79%;
+        padding-top: rem(50px);
+    }
+
+    @include laptop {
+        background-position-x: 95%;
+        background-size: 79%;
+
+    }
+
+    @include tablet {
+        background-position-x: 95%;
+
+    }
+
+    @include mobile {
+        background-image: none;
+    }
+
+    h2 {
+        font-size: rem(62px);
+        font-weight: 700;
+        margin-bottom: rem(19px);
+        line-height: 1;
+
+        @include mobile {
+            font-size: 31px;
+
+        }
+    }
+
+}
+
+.contact-us {
+    background-image: url('../img/bg/banner_contacts.jpg');
+    background-size: 100%;
+    background-position: 45% 10%;
+    padding-top: 14%;
+    
+    padding-bottom: rem(102px);
+    
+    @include tablet {
+        background-size: 250%;
+        background-position: 3% 45%;
+    }
+
+
+
+
+}
+
+.banner__subscription-form {
+    background: $orange;
+    border-radius: 20px;
+    margin-bottom: rem(37px);
+    text-align: center;
+    padding: rem(42px) rem(33px);
+
+}
+
+.banner__title {
+    width: 75%;
+
+    @include desktop {
+        width: 80%;
+    }
+
+    @include ipad {
+        width: 100%;
+        text-align: center;
+    }
+
+    @include laptop {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    @include tablet {
+        width: 100%;
+
+    }
+}
+
+.title {
+    h3 {
+        text-align: left;
+        color: #fff;
+        font-size: rem(45px);
+
+        @include mobile {
+            font-size: rem(35px);
+
+        }
+    }
+}
+
+.sf__text {
+    color: #fff;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: rem(30px);
+
+
+}
+
+.form-control {
+    border-radius: 20px;
+    font-size: rem(25px);
+    padding: rem(30px) rem(40px);
+    margin-bottom: rem(20px);
+    border-color: #dfdfdf;
+
+    @include mobile {
+        font-size: rem(20px);
+        padding: rem(20px) rem(30px);
+        margin-bottom: rem(15px);
+    }
+}
+
+.sf__form {
+    width: 95%;
+
+    .btn{
+        background: $green;
+        color: #fff;
+        width: 100%;
+
+        &:hover{
+            background-color: #449d44;
+            border-color: #398439;
+        }
+        
+        @include ipad {
+            font-size:rem(21px);
+            padding: rem(15px) rem(10px);
+
+        }
+
+        @include mobile {
+            white-space: normal
+
+        }
+    }
+}
+
+.banner__subtitle {
+    font-size: rem(20px);
+    color: #929292;
+    margin-bottom: rem(30px);
+
+}
+
+.form__title {
+    color: #fff;
+    font-size: rem(30px);
+    margin-bottom: rem(100px);
+
+    @include mobile {
+        font-size: rem(25px);
+        margin-bottom: rem(70px);
+    }
+}
+
+.banner__payday-slider {
+    width: 90%;
+    height: rem(287px);
+    background: $orange;
+    border-radius: 20px;
+    margin-bottom: rem(37px);
+    text-align: center;
+    padding-top: rem(42px);
+    padding-left: rem(33px);
+    padding-right: rem(33px);
+
+    @include ipad {
+        width: 94%;
+    }
+
+    @include laptop {
+
+        width: 50%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+}
+
+#ex1Slider {
+    width: 100%;
+    margin-bottom: rem(28px);
+
+    @include mobile {
+        margin-bottom: rem(20px);
+
+    }
+
+}
+
+.slider-handle {
+    width: rem(35px);
+    height: rem(35px);
+    background: $green;
+    top: rem(-8px);
+
+    @include mobile {
+        width: rem(25px);
+        height: rem(25px);
+        top: -3px;
+
+    }
+
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 7px;
+}
+
+.tooltip-arrow {
+    left: 57%;
+    bottom: rem(11px);
+    border-top-color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #fff;
+}
+
+.tooltip-inner {
+    background: #fff;
+    color: $green;
+    @include oswald('regular', rem(27px));
+    font-weight: 700;
+    padding: rem(6px) rem(30px);
+    border-radius: 20px;
+
+    @include mobile {
+        font-size: rem(20px);
+        padding: rem(4px) rem(20px);
+
+    }
+
+}
+
+.slider .tooltip.tooltip-main.top {
+    margin-top: rem(-77px);
+    z-index: 956;
+
+    margin-left: rem(-56px) !important;
+    opacity: 1;
+
+    @include mobile {
+        margin-top: -45px;
+        margin-left: -37px !important;
+    }
+}
+
+.slider-values {
+    color: #fff;
+    @include oswald('regular', rem(29px));
+
+    @include mobile {
+        font-size: rem(23px);
+
+    }
+}
+
+.min-number {
+    float: left;
+}
+
+.max-number {
+    float: right;
+}
+
+.slider__submit-button {
+    text-align: left;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.btn {
+    @include montser('bold', rem(27px));
+    border-radius: 25px;
+    padding: rem(19px) rem(53px);
+    text-transform: uppercase;
+}
+
+.btn-success {
+    background: $green;
+
+}

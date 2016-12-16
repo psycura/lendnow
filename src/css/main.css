@@ -3048,7 +3048,9 @@ header {
   font-size: 0.8125rem; }
 
 .navigation {
-  position: relative; }
+  position: absolute;
+  top: 0;
+  z-index: 1000; }
 
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -3064,7 +3066,8 @@ header {
     .navbar-default {
       box-shadow: none;
       border: none;
-      margin: -0.5px 0px; } }
+      margin: -0.5px 0px;
+      background: transparent; } }
   @media screen and (max-width: 992px) {
     .navbar-default {
       box-shadow: none;
@@ -3236,19 +3239,18 @@ header {
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0; } }
 .main__banner_home {
+  position: relative;
   background-image: url("../img/bg/home-banner-bg.jpg");
   background-position: 90% bottom;
   background-repeat: no-repeat;
   padding-top: 6.25rem;
   padding-bottom: 2.3125rem;
   background-size: contain; }
-  @media screen and (max-width: 1366px) {
-    .main__banner_home {
-      padding-top: 3.125rem; } }
   @media screen and (max-width: 1024px) {
     .main__banner_home {
       background-position-x: 95%;
-      background-size: 79%; } }
+      background-size: 79%;
+      padding-top: 3.125rem; } }
   @media screen and (max-width: 992px) {
     .main__banner_home {
       background-position-x: 95%;
@@ -3268,6 +3270,24 @@ header {
       .main__banner_home h2 {
         font-size: 31px; } }
 
+.contact-us {
+  background-image: url("../img/bg/banner_contacts.jpg");
+  background-size: 100%;
+  background-position: 45% 10%;
+  padding-top: 14%;
+  padding-bottom: 6.375rem; }
+  @media screen and (max-width: 768px) {
+    .contact-us {
+      background-size: 250%;
+      background-position: 3% 45%; } }
+
+.banner__subscription-form {
+  background: #e9603c;
+  border-radius: 20px;
+  margin-bottom: 2.3125rem;
+  text-align: center;
+  padding: 2.625rem 2.0625rem; }
+
 .banner__title {
   width: 75%; }
   @media screen and (max-width: 1366px) {
@@ -3284,6 +3304,51 @@ header {
   @media screen and (max-width: 768px) {
     .banner__title {
       width: 100%; } }
+
+.title h3 {
+  text-align: left;
+  color: #fff;
+  font-size: 2.8125rem; }
+  @media screen and (max-width: 480px) {
+    .title h3 {
+      font-size: 2.1875rem; } }
+
+.sf__text {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 1.875rem; }
+
+.form-control {
+  border-radius: 20px;
+  font-size: 1.5625rem;
+  padding: 1.875rem 2.5rem;
+  margin-bottom: 1.25rem;
+  border-color: #dfdfdf; }
+  @media screen and (max-width: 480px) {
+    .form-control {
+      font-size: 1.25rem;
+      padding: 1.25rem 1.875rem;
+      margin-bottom: 0.9375rem; } }
+
+.sf__form {
+  width: 95%; }
+  .sf__form .btn {
+    background: #71b13b;
+    color: #fff;
+    width: 100%; }
+    .sf__form .btn:hover {
+      background-color: #449d44;
+      border-color: #398439; }
+    @media screen and (max-width: 1024px) {
+      .sf__form .btn {
+        font-size: 1.3125rem;
+        padding: 0.9375rem 0.625rem; } }
+    @media screen and (max-width: 480px) {
+      .sf__form .btn {
+        white-space: normal; } }
 
 .banner__subtitle {
   font-size: 1.25rem;
@@ -3363,6 +3428,7 @@ header {
 
 .slider .tooltip.tooltip-main.top {
   margin-top: -4.8125rem;
+  z-index: 956;
   margin-left: -3.5rem !important;
   opacity: 1; }
   @media screen and (max-width: 480px) {
@@ -4704,6 +4770,47 @@ h3 {
       @media screen and (max-width: 480px) {
         .rules__check_item .check__icon i {
           zoom: .5; } }
+
+.contact-us_form {
+  padding-top: 6.25rem;
+  padding-botom: 6.25rem; }
+  .contact-us_form .btn {
+    background: #71b13b;
+    color: #fff;
+    border-radius: 10px;
+    width: 25%; }
+    @media screen and (max-width: 768px) {
+      .contact-us_form .btn {
+        width: 50%; } }
+    @media screen and (max-width: 480px) {
+      .contact-us_form .btn {
+        width: 100%; } }
+    .contact-us_form .btn:hover {
+      background-color: #449d44;
+      border-color: #398439; }
+
+.cf__main-title {
+  font-size: 2.8125rem;
+  margin-bottom: 1.875rem; }
+
+.cf__main-text {
+  font-family: 'oswald_regularregular';
+  font-size: 1.25rem;
+  color: #777676;
+  margin-bottom: 3.125rem;
+  line-height: 1.2; }
+
+label {
+  font-size: 1.0625rem;
+  color: #505050;
+  margin-bottom: 0.75rem; }
+
+.checkbox {
+  margin-bottom: 1.75rem; }
+  .checkbox label {
+    font-family: 'oswald_regularregular';
+    font-size: 1.0625rem;
+    color: #505050; }
 
 footer {
   color: #fff; }

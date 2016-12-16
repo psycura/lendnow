@@ -1,0 +1,62 @@
+.contact-us_form {
+    padding-top: rem(100px);
+    padding-botom: rem(100px);
+
+    .btn {
+        background: $green;
+        color: #fff;
+        border-radius: 10px;
+        width: 25%;
+        
+        @include tablet {
+            width: 50%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &:hover{
+            background-color: #449d44;
+            border-color: #398439;
+        }
+
+    }
+
+}
+
+.cf__main-title {
+    font-size: rem(45px);
+    margin-bottom: rem(30px);
+
+}
+
+.cf__main-text {
+    @include oswald('regular', rem(20px));
+    color: #777676;
+    margin-bottom: rem(50px);
+    line-height: 1.2;
+
+}
+
+label {
+    font-size: rem(17px);
+    color: #505050;
+    margin-bottom: rem(12px);
+
+}
+
+.checkbox {
+
+    margin-bottom: rem(28px);
+    label {
+        @include oswald('regular', rem(17px));
+        color: #505050;
+
+    }
+
+
+
+
+}
+
