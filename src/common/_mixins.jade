@@ -21,16 +21,47 @@ mixin socials
 
 
 mixin navigation
+                                -
+                                    var navItems={
+                                    'Home':'index.html',
+                                    'How It Works':'#',
+                                    'Payday Loans':'#',
+                                    'Faq':'#',
+                                    'Blog':'#',
+                                    'Apply Online':'#',
+                                    'About Us':'#',
+                                    'Contact Us':'pages/contacts.html'
+
+                                    }
+                                section.navigation
+                                    nav.main_nav.navbar.navbar-default
+                                        .container
+                                            .navbar-header
+                                                button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                                                    span.sr-only Toggle navigation
+                                                    span.icon-bar
+                                                    span.icon-bar
+                                                    span.icon-bar
+                                                a(href="#").navbar-brand
+
+                                            .collapse.navbar-collapse(id='navbar1')
+                                                ul.nav.navbar-nav
+                                                    each pageUrl, pageName in navItems
+                                                        li.nav.navbar-nav
+                                                            a(href="#{pageUrl}").nav__link=pageName
+
+
+mixin navigation_inner
     -
         var navItems={
-        'Home':'#',
+        'Home':'../index.html',
         'How It Works':'#',
         'Payday Loans':'#',
         'Faq':'#',
         'Blog':'#',
         'Apply Online':'#',
         'About Us':'#',
-        'Contact Us':'#'
+        'Contact Us':'contacts.html'
 
         }
     section.navigation
@@ -49,7 +80,6 @@ mixin navigation
                         each pageUrl, pageName in navItems
                             li.nav.navbar-nav
                                 a(href="#{pageUrl}").nav__link=pageName
-
 
 
 
