@@ -11,12 +11,32 @@ html {
         font-size: 16px;
     }
 
-    @include laptop {
+    @include desktop-1280 {
+        font-size: 15.5px;
+
+    }
+    
+    @include desktop-1150 {
         font-size: 15px;
+
+    }
+    
+    @include ipad {
+        font-size: 14.5px;
+
+    }
+
+    @include laptop {
+        font-size: 14px;
     }
 
     @include tablet {
-        font-size: 14px;
+        font-size: 13.5px;
+    }
+    
+    @include mobile-wide {
+        font-size: 13px;
+
     }
 
     @include mobile {
@@ -59,6 +79,15 @@ body {
         width: 1366px;
     }
 
+    @include desktop-1280 {
+        width: 1260px;
+    }
+
+    @include desktop-1150 {
+        width: 1130px;
+    }
+
+
     @include ipad {
         width: 1004px;
     }
@@ -69,6 +98,10 @@ body {
 
     @include tablet {
         width: 670px;
+    }
+
+    @include mobile-wide {
+        width: 548px;
     }
 
     @include mobile {

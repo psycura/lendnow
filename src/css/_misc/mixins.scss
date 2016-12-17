@@ -45,6 +45,18 @@
     }
 }
 
+@mixin desktop-1280{
+    @media screen and (max-width: 1280px){
+        @content;
+    }
+}
+
+@mixin desktop-1150{
+    @media screen and (max-width: 1150px){
+        @content;
+    }
+}
+
 @mixin ipad{
     @media screen and (max-width: 1024px){
         @content;
@@ -59,6 +71,12 @@
 
 @mixin tablet{
     @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile-wide{
+    @media screen and (max-width: 568px){
         @content;
     }
 }

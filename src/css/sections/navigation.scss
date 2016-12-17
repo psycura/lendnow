@@ -129,6 +129,10 @@
     padding-left: rem(58px);
     padding-right: rem(58px);
 
+    @include desktop-1150 {
+        padding-left: 0;
+    }
+
     @include ipad {
 
         margin-left: 0;
@@ -169,6 +173,12 @@
 
 
     }
+    
+    @include mobile-wide {
+        margin-top: -58px;
+
+    }
+
     
     @include mobile {
         margin-top: -53px;
@@ -230,7 +240,7 @@
 
 #navbar1{
     @include mobile {
-        width:80%;
+        width:150%;
     }
 }
 

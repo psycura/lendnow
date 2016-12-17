@@ -49,6 +49,10 @@ header {
             float: left;
         }
 
+        @include mobile-wide {
+            width: 59%;
+        }
+
         @include mobile {
             display: none;
         }
@@ -95,6 +99,10 @@ header {
     @include tablet {
         margin-left: 7%;
     }
+    
+    @include mobile-wide {
+        margin-left: 5px;
+    }
 }
 
 .contacts__right {
@@ -109,6 +117,10 @@ header {
 
         @include tablet {
             padding: rem(3px);
+        }
+
+        @include mobile-wide {
+            padding: 0;
         }
     }
 
@@ -133,6 +145,11 @@ header {
         @include tablet {
             font-size: rem(14px);
         }
+        
+        @include mobile-wide {
+            font-size: rem(10px);
+
+        }
     }
 
     @include tablet {
@@ -141,6 +158,15 @@ header {
         padding: rem(5px);
         margin-right: rem(9px);
 
+    }
+    
+    @include mobile-wide {
+        width: rem(25px);
+        height: rem(25px);
+        padding: rem(5px);
+        margin-right: rem(5px);
+        vertical-align: text-top;
+        padding: 0;
     }
 
 }
@@ -158,8 +184,17 @@ header {
     font-weight: 700;
     line-height: 1;
     padding-bottom: rem(8px);
+
+    @include mobile-wide {
+        font-size: rem(12px);
+
+    }
 }
 
 .contacts__text_bottom {
     font-size: rem(13px);
+    @include mobile-wide {
+        font-size: rem(10px);
+
+    }
 }
