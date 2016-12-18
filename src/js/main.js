@@ -6,4 +6,8 @@ $(function () {
             return '€ ' + value;
         }
     });
+    
+    $('#myCollapsible').collapse({
+        toggle: false
+    })
 });

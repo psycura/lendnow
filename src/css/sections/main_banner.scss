@@ -443,6 +443,72 @@
 
 }
 
+/* ---------- about us ----------*/
+.about-us{
+    background-image: url('../img/bg/about-us-bg.jpg');
+    background-size:cover;
+    background-position: top;
+
+    .panel_orange{
+        padding-left:rem(65px);
+        padding-right:rem(65px);
+        
+        @include mobile-wide {
+            padding-left:rem(50px);
+            padding-right:rem(50px);
+        }
+    }
+
+    .panel__text{
+        text-align: center;
+    }
+
+    .panel__title{
+        width: 96%;
+        color: #fff;
+        margin-bottom:rem(35px);
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    h3{
+        color: #fff;
+        font-size:rem(55px);
+        font-weight:400;
+
+        margin-bottom:rem(25px);
+        
+        @include mobile {
+            font-size:rem(33px);
+
+        }
+        .bold{
+            font-weight:700;
+        }
+
+    }
+
+    .panel__subtitle{
+        text-align: center;
+        font-size:rem(26px);
+        line-height: 1.5;
+        width:90%;
+
+
+    }
+
+    .panel__content{
+        text-align: center;
+        color: #fff;
+        font-size:rem(12px);
+        line-height: 1.9;
+
+    }
+
+}
+
 
 
 

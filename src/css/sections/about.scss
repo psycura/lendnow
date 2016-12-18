@@ -1,0 +1,435 @@
+.about {
+    .cta__text_title {
+        font-size: rem(40px);
+        font-weight: 700;
+        margin-bottom: rem(35px);
+
+        @include mobile {
+            font-size: rem(35px);
+
+        }
+    }
+
+    .cta__text_subtitle {
+        @include oswald('regular', rem(25px));
+
+        font-weight: 400;
+    }
+
+    .cta__text_content{
+        margin-bottom:rem(20px);
+        
+    }
+
+     .cta__text {
+        text-align: center;
+        font-size: rem(15px);
+        line-height: 1.8;
+        margin-bottom: rem(35px);
+        
+        @include ipad {
+            width: 100%;
+        }
+
+    }
+
+    .cta__button {
+        width: 40%;
+        margin: auto;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+.customers__columns {
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
+
+    .customers__main-title {
+        margin-bottom: rem(140px);
+
+        @include mobile {
+            margin-bottom: rem(70px);
+
+        }
+    }
+
+    h3 {
+        text-align: center;
+        font-size: rem(40px);
+
+        @include mobile {
+            font-size: rem(30px);
+
+        }
+
+    }
+}
+
+.customers__list {
+    margin-bottom: rem(70px);
+
+}
+
+.customers__item_content{
+    margin-bottom:rem(50px);
+}
+
+.customers__item_content {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 9px;
+    color: #6d6d6d;
+    padding: rem(29px);
+
+}
+
+.customer__info {
+    margin-left: 38%;
+}
+
+.customer__name {
+    color: $green;
+    font-size: rem(25px);
+    margin-bottom: rem(10px);
+
+}
+
+.customer__acc {
+    font-size: rem(18px);
+    margin-bottom: rem(25px);
+
+}
+
+.customer__desc {
+    font-size: rem(15px);
+
+}
+
+.customers__pic {
+    position: absolute;
+    width: rem(120px);
+    height: rem(120px);
+    border-radius: 50%;
+    background: $green;
+    top: -20%;
+    
+    @include ipad {
+        width: rem(90px);
+        height: rem(90px);
+        top: -14%;
+        left: 3%;
+    }
+
+
+
+
+
+    img {
+        display: none;
+    }
+}
+
+.more__info_btn {
+    text-align: center;
+
+
+    .btn{
+        @include mobile {
+            font-size: rem(20px);
+        }
+
+        
+
+    }
+}
+
+.strip_green {
+    background: $green;
+    color: #fff;
+    padding-top: rem(60px);
+    padding-bottom: rem(60px);
+    text-align: center;
+
+    .strip__title {
+        font-size: rem(40px);
+        margin-bottom: rem(25px);
+        text-transform: uppercase;
+
+        @include mobile {
+            font-size: rem(30px);
+        }
+
+    }
+
+    .strip__text {
+        font-size: rem(25px);
+
+    }
+
+}
+
+.about__wide-section {
+
+.container-fluid{
+    padding-left:0;
+
+    @include laptop {
+        padding-left:rem(15px);
+
+    }
+}
+
+
+}
+
+.wide-section__img{
+    background-image: url('../img/bg/ws-option-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: rem(1390px);
+    background-position: right;
+
+    
+    @include desktop-1280 {
+        min-height: rem(1450px);
+
+    }
+    @include desktop-1150 {
+        min-height: rem(1500px);
+
+    }
+    
+    @include ipad {
+        min-height: rem(1600px);
+
+    }
+    
+    @include laptop {
+        display: none;
+
+    }
+
+
+}
+
+.wide-section__content{
+    padding-top: rem(90px);
+    padding-bottom: rem(60px);
+}
+
+.ws__title {
+    margin-bottom: rem(20px);
+}
+
+.ws__desc {
+    color: #818181;
+    font-size: rem(18px);
+    line-height: 1.8;
+    width: 85%;
+    margin-bottom: rem(70px);
+}
+
+.ws__options_item {
+    margin-bottom: rem(70px);
+
+}
+
+.ws__option_icon {
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+    background: $green;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: rem(20px);
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    @include mobile {
+        width: rem(80px);
+        height: rem(80px);
+        padding-top: 6%;
+        padding-bottom: 6%;
+        margin-bottom:rem(20px);
+
+    }
+
+    i {
+        font-size: rem(60px);
+        @include mobile {
+            font-size: rem(40px);
+
+        }
+
+    }
+
+}
+
+.pointer {
+    padding-left: 2%;
+
+}
+
+.ws__options_content {
+    display: inline-block;
+    vertical-align: top;
+    width: 64%;
+
+    @include mobile {
+        width: 100%;
+    }
+    
+
+
+    .btn.btn-danger {
+        padding: rem(10px) rem(25px);
+    }
+
+    a {
+        font-size: rem(18px);
+        font-weight: 400;
+
+    }
+
+}
+
+.ws__options_title {
+    color: $green;
+    font-size: rem(30px);
+    margin-bottom: rem(10px);
+
+}
+
+.ws__options_text {
+    color: #6a6a6a;
+    font-size: rem(20px);
+    line-height: 1.5;
+    margin-bottom: rem(30px);
+
+}
+
+.payday-loan__faq {
+    padding-top: rem(120px);
+    padding-bottom: rem(120px);
+    text-align: center;
+
+
+}
+
+.faq__accordeon{
+    margin-bottom: rem(50px);
+
+}
+
+.payday-loan__faq_title {
+    margin-bottom: rem(50px);
+
+}
+
+.panel{
+    box-shadow: none;
+    text-align: left;
+    width:90%;
+    margin:auto;
+
+    
+    @include ipad {
+        width: 96%;
+    }
+    .collapse.in{
+        margin-left: 0;
+        @include ipad {
+            width: 100%;
+            box-shadow: none;
+            padding-left: 0;
+        }
+    }
+
+    .icon{
+        float: right;
+        border-radius: 50%;
+        width:rem(30px);
+        height:rem(30px);
+        background: #f57756;
+        text-align: center;
+        @include mobile {
+            position: absolute;
+            left: 88%;
+            top: 35%;
+        }
+
+        i{
+            color: #fff;
+            font-size:rem(20px);
+        }
+    }
+}
+
+
+.panel-danger {
+
+    border:transparent;
+
+    .panel-heading {
+        background: $orange;
+
+        border-radius: 6px;
+        padding: 0;
+    }
+    .panel-title {
+        
+        color: #fff;
+        font-size:rem(25px);
+
+        a{
+            padding:rem(15px) rem(15px);
+            display: block;
+            position: relative;
+
+            &:hover,&:focus{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body{
+    border-top:transparent;
+
+}
+
+.faq__question_text{
+    width: 90%;
+    display: inline-block;
+}
+
+.faq__answer{
+    line-height: 1.6;
+    color: #2b2b2b;
+}
+
+.faq__more_text{
+    font-size:rem(20px);
+    margin-bottom:rem(15px);
+
+
+}
+
+.faq__more_link{
+    font-size:rem(30px);
+    font-weight: 700;
+    color: $black;
+    &:hover,&:focus{
+        color: $black;
+    }
+
+}
+
