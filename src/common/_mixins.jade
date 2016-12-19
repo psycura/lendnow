@@ -24,9 +24,9 @@ mixin navigation
     -
         var navItems={
         'Home':'index.html',
-        'How It Works':'#',
+        'How It Works':'pages/how-it-works.html',
         'Payday Loans':'pages/payday-loan.html',
-        'Faq':'#',
+        'Faq':'pages/faq.html',
         'Blog':'#',
         'Apply Online':'#',
         'About Us':'pages/about.html',
@@ -55,9 +55,9 @@ mixin navigation_inner
     -
         var navItems={
         'Home':'../index.html',
-        'How It Works':'#',
+        'How It Works':'how-it-works.html',
         'Payday Loans':'payday-loan.html',
-        'Faq':'#',
+        'Faq':'faq.html',
         'Blog':'#',
         'Apply Online':'#',
         'About Us':'about.html',
@@ -80,6 +80,27 @@ mixin navigation_inner
                         each pageUrl, pageName in navItems
                             li.nav.navbar-nav
                                 a(href="#{pageUrl}").nav__link=pageName
+
+mixin navigation_payload
+    -
+        var navItems={
+        'Instant Payday Loans':'../pages/payload.html',
+        'How It Works':'../pages/how-it-works.html',
+        'Bad Credit Loans':'../pages/bad-credit.html',
+        'Payday Loans Direct':'#'
+
+        }
+
+    section.nav__payload
+        .container
+            .nav__title
+                |Learn More:
+            ul.nav__payload_list
+                each pageUrl, pageName in navItems
+                    li.nav__payload_item
+                        a(href="#{pageUrl}").nav__payload_link=pageName
+            .nav__faq_link
+                a(href="#") FAQ
 
 
 

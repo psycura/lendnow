@@ -1,0 +1,25 @@
+.strip__green_faq{
+
+
+        text-align: left;
+        padding-top:rem(40px);
+        padding-bottom:rem(24px);
+
+    .strip__title{
+        float: left;
+    }
+}
+
+.faq__content{
+    padding-top:rem(80px);
+    padding-bottom:rem(140px);
+
+    hr{
+        border-color: #000;
+        width: 90%;
+
+        @include ipad {
+            width: 96%;
+        }
+    }
+}

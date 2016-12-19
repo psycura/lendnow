@@ -17,12 +17,15 @@ $grey: #666666;
 @import "_misc/adjustment";
 @import "plugins/font-awesome";
 @import "_misc/sprites";
+@import "_misc/sprites-payloans";
 
 
 // styles
 
 @import "sections/header";
 @import "sections/navigation";
+@import "sections/navigation-inner";
+
 @import "sections/main_banner";
 @import "sections/cta";
 @import "sections/welcom";
@@ -36,6 +39,10 @@ $grey: #666666;
 @import "sections/contact_us";
 @import "sections/bad-credit";
 @import "sections/about";
+@import "sections/payload";
+@import "sections/faq";
+@import "sections/howitworks";
+
 
 @import "sections/footer";
 

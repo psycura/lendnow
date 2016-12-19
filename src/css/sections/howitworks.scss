@@ -1,0 +1,24 @@
+.howitworks__ws{
+    .wide-section__img{
+        background-image: url('../img/bg/ws-howitworks.jpg');
+        margin-left: -15px;
+    }
+
+}
+
+.strip__orange{
+    background: #d14f2c;
+
+    padding-top:rem(100px);
+    padding-bottom:rem(100px);
+    text-align: center;
+
+    .section__title{
+        color: #fff;
+    }
+    .section__text{
+        color: #fff;
+        line-height: 1.6;
+
+    }
+}
