@@ -62,14 +62,12 @@
 /* ---------- loan slider ----------*/
 .banner__payday-slider {
     width: 90%;
-    height: rem(287px);
+    //height: rem(287px);
     background: $orange;
     border-radius: 20px;
     margin-bottom: rem(37px);
     text-align: center;
-    padding-top: rem(42px);
-    padding-left: rem(33px);
-    padding-right: rem(33px);
+    padding: rem(42px) rem(45px);
 
     @include ipad {
         width: 94%;
@@ -86,7 +84,7 @@
 
 }
 #ex1Slider {
-    width: 100%;
+    width: 97%;
     margin-bottom: rem(28px);
 
     @include mobile {
@@ -123,9 +121,9 @@
 .tooltip-inner {
     background: #fff;
     color: $green;
-    @include oswald('regular', rem(27px));
+    @include oswald('regular', rem(24px));
     font-weight: 700;
-    padding: rem(6px) rem(30px);
+    padding: rem(6px) rem(16px);
     border-radius: 20px;
 
     @include mobile {
@@ -139,7 +137,7 @@
     margin-top: rem(-77px);
     z-index: 956;
 
-    margin-left: rem(-56px) !important;
+    margin-left: rem(-42px) !important;
     opacity: 1;
 
     @include mobile {

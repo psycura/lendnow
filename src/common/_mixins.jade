@@ -35,20 +35,20 @@ mixin navigation
         }
     section.navigation
         nav.main_nav.navbar.navbar-default
-            .container
-                .navbar-header
-                    button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a(href="#").navbar-brand
 
-                .collapse.navbar-collapse(id='navbar1')
-                    ul.nav.navbar-nav
-                        each pageUrl, pageName in navItems
-                            li.nav.navbar-nav
-                                a(href="#{pageUrl}").nav__link=pageName
+            .navbar-header
+                button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="#").navbar-brand
+
+            .collapse.navbar-collapse(id='navbar1')
+                ul.nav.navbar-nav
+                    each pageUrl, pageName in navItems
+                        li.nav.navbar-nav
+                            a(href="#{pageUrl}").nav__link=pageName
 
 
 mixin navigation_inner
@@ -66,20 +66,19 @@ mixin navigation_inner
         }
     section.navigation
         nav.main_nav.navbar.navbar-default
-            .container
-                .navbar-header
-                    button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a(href="#").navbar-brand
+            .navbar-header
+                button(type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="#").navbar-brand
 
-                .collapse.navbar-collapse(id='navbar1')
-                    ul.nav.navbar-nav
-                        each pageUrl, pageName in navItems
-                            li.nav.navbar-nav
-                                a(href="#{pageUrl}").nav__link=pageName
+            .collapse.navbar-collapse(id='navbar1')
+                ul.nav.navbar-nav
+                    each pageUrl, pageName in navItems
+                        li.nav.navbar-nav
+                            a(href="#{pageUrl}").nav__link=pageName
 
 mixin navigation_payload
     -

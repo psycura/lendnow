@@ -2,7 +2,7 @@
     padding-top:rem(110px);
     padding-bottom: rem(100px);
     background: #fcfcfc;
-    @include mobile {
+    @include mobile-wide {
         padding-top:rem(50px);
         padding-bottom: rem(50px);
     }
@@ -16,7 +16,7 @@
 }
 
 h3{
-    @include mobile {
+    @include mobile-wide {
         font-size:rem(35px);
 
     }
@@ -55,14 +55,14 @@ h3{
 .promices__items_list{
     width: 100%;
     
-    @include tablet {
+    @include laptop {
         text-align: center;
     }
 
 }
 
 .promices__item{
-    max-width:33.1%;
+    max-width:33%;
     display: inline-block;
     @extend %clearfix;
 
@@ -72,13 +72,13 @@ h3{
         margin-left: rem(33px);
     }
     
-    @include tablet {
+    @include laptop {
         max-width:90%;
         display: block;
 
     }
     
-    @include mobile {
+    @include mobile-wide {
         margin-bottom:rem(20px);
 
     }
@@ -89,14 +89,14 @@ h3{
 .promice__item_icon{
     margin-bottom:rem(37px);
 
-    @include tablet {
+    @include laptop {
         margin-right:58px;
         width:30%;
         float: left;
 
     }
 
-    @include mobile {
+    @include mobile-wide {
 
         display: inline-block;
         vertical-align: top;
@@ -109,12 +109,12 @@ h3{
 }
 
 .promice__item_text{
-    @include tablet {
+    @include laptop {
         width:78%;
         text-align: left;
     }
 
-    @include mobile {
+    @include mobile-wide {
         display: inline-block;
         vertical-align: top;
         width: 65%;
@@ -122,7 +122,7 @@ h3{
 }
 
 .promice__item_title{
-    font-size:rem(29px);
+    font-size:160%;
     font-weight:700;
     color: $orange;
     text-transform: uppercase;
