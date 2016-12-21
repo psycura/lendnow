@@ -1,7 +1,6 @@
 .payload{
-    background-image: url('../img/bg/payload-bg.jpg');
     background-size:cover;
-    background-position: top;
+    background: url('../img/bg/payload-bg.jpg') top;
     padding-top:rem(140px);
     padding-bottom:rem(140px);
 
@@ -159,6 +158,9 @@
         padding: rem(29px);
         margin-bottom: rem(20px);
 
+        
+        
+
         @include desktop {
             width: rem(140px);
             height: rem(140px);
@@ -178,6 +180,7 @@
 
             @include laptop {
                 zoom: 0.75;
+                
             }
         }
     }

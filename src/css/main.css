@@ -5515,9 +5515,8 @@ label {
     color: #333333; }
 
 .payload {
-  background-image: url("../img/bg/payload-bg.jpg");
   background-size: cover;
-  background-position: top;
+  background: url("../img/bg/payload-bg.jpg") top;
   padding-top: 8.75rem;
   padding-bottom: 8.75rem; }
   .payload .panel__title {

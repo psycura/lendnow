@@ -2,6 +2,7 @@ let gulp = require('gulp');
 let autoprefixer = require('gulp-autoprefixer');
 let spritesmith = require('gulp.spritesmith');
 let csso = require('gulp-csso');
+let gcmq = require('gulp-group-css-media-queries');
 
 let SRC_DIR = 'src/';
 let DIST_DIR = 'dist/';
@@ -25,9 +26,9 @@ let path = {
     },
     sprites : {
         src : SRC_DIR + 'img/icons/*.png',
-        distImg : DIST_DIR + 'img',
-        imgLocation : 'img/sprite.png',
-        distFile : DIST_DIR + 'css/sprite'
+        distImg : SRC_DIR + 'img/decor/',
+        imgLocation : 'img/decor/sprite.png',
+        distFile : SRC_DIR + 'css/sprite'
     }
     
 };
@@ -36,6 +37,7 @@ gulp.task('build', ['pages', 'styles', 'scripts', 'assets', 'fonts']);
 
 gulp.task('styles', function () {
     return gulp.src(path.styles.src)
+        .pipe(gcmq())
         .pipe(autoprefixer({
             browsers : ['>5%'],
             cascade : false
