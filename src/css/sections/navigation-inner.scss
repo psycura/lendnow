@@ -3,7 +3,13 @@
     background: $green;
     padding-top: rem(40px);
     padding-bottom: rem(40px);
-    @include oswald('regular', rem(30px))
+    @include oswald('regular', 170%);
+
+    @include laptop {
+        font-size:155%;
+
+    }
+
 }
 
 .nav__title {
@@ -11,7 +17,7 @@
     display: inline-block;
     font-weight: 700;
     margin-right: 3%;
-    @include ipad {
+    @include desktop-1280 {
         margin-right: 0;
 
     }
@@ -46,12 +52,14 @@
 
     @include tablet {
         margin-bottom: rem(15px);
-        margin-right: rem(220px);
+        margin-right: 39%;
 
     }
 
     @include mobile {
-        margin-right: rem(15px);
+
+        margin-right: 20%;
+
     }
 
     a {
@@ -61,13 +69,17 @@
         border: 1px solid transparent;
         border-radius: 9px;
 
-        @include laptop {
-            font-size: rem(22px);
+        @include desktop-1280 {
+            font-size: 70%;
 
         }
         @include tablet {
 
             font-size: rem(25px);
+            padding: rem(10px);
+            
+
+
 
         }
 

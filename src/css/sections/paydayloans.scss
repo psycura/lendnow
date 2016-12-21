@@ -1,16 +1,172 @@
+.bad-credit {
+    background-image: url('../img/bg/bad-credit-bg.jpg');
+    background-size: cover;
+    background-position: top;
+    padding-top: 12%;
+
+    padding-bottom: rem(102px);
+
+    .panel_orange {
+        @include desktop {
+            width: 44%;
+        }
+
+        @include laptop {
+            width: 55%;
+            margin-left:39%;
+        }
+        @include tablet {
+            width: 100%;
+            margin-left: 0;
+
+        }
+    }
+
+    @include mobile {
+        background-size: cover;
+    }
+
+}
+
+.payday-loan {
+    background-image: url('../img/bg/payday-loan.jpg');
+
+}
+
+.panel_orange {
+
+    background: $orange;
+    border-radius: 20px;
+    margin-bottom: rem(37px);
+    padding: rem(42px) rem(33px);
+
+    .panel__button {
+        text-align: center;
+    }
+
+}
+
+.panel__content {
+    margin-bottom: rem(40px);
+
+}
+
+.panel__text {
+    margin-bottom: rem(25px);
+
+}
+
+.panel__title {
+    width: 60%;
+
+    h3 {
+        color: #fff;
+
+        font-size: rem(45px);
+        text-transform: none;
+        line-height: 1.2;
+
+        @include mobile {
+            font-size: rem(32px);
+
+        }
+
+    }
+
+    @include desktop-1280 {
+        width: 75%;
+
+    }
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 80%;
+    }
+
+}
+
+.panel__subtitle {
+    color: #f3f3f3;
+    font-size: rem(20px);
+
+}
+
+.panel__check_item {
+    margin-bottom: rem(20px);
+
+    .icon {
+        background-image: url('../img/decor/check-circle-outline.png');
+        width: rem(45px);
+        height: rem(45px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: bottom;
+
+        @include desktop-1150 {
+            width: rem(35px);
+            height: rem(35px);
+
+        }
+        @include tablet {
+            width: rem(45px);
+            height: rem(45px);
+        }
+
+    }
+
+    .check__item_text {
+        @include oswald('regular', rem(30px));
+        color: #fff;
+        text-transform: uppercase;
+        margin-left: rem(30px);
+        display: inline-block;
+        vertical-align: middle;
+
+        @include desktop-1280 {
+            font-size: rem(26px);
+        }
+
+        @include desktop-1150 {
+            font-size: rem(22px);
+
+        }
+
+        @include tablet {
+            font-size: rem(30px);
+
+        }
+        
+        @include mobile-wide {
+            margin-left: rem(9px);
+
+
+        }
+
+        @include mobile {
+            width: 74%;
+            font-size: rem(22px);
+        }
+    }
+
+}
+
 .payday-loans {
     position: relative;
 
     padding-top: rem(100px);
     padding-bottom: rem(100px);
 
-    @include ipad {
+    @include desktop-1150 {
         padding-top: rem(50px);
         padding-bottom: rem(50px);
 
     }
 
-    @include mobile {
+    @include mobile-wide {
         padding-top: rem(50px);
         padding-bottom: rem(50px);
     }
@@ -18,7 +174,7 @@
     ul {
         @include oswald('regular', rem(20px));
 
-        @include ipad {
+        @include desktop-1150 {
             font-size: rem(18px);
 
         }
@@ -54,7 +210,7 @@
         width: 70%;
         float: left;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
     }
@@ -62,14 +218,14 @@
         width: 30%;
         float: right;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
     }
     .bullets__block {
         width: 35%;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
             margin-bottom: rem(20px);
         }
@@ -77,12 +233,12 @@
     .checks__block {
         width: 55%;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
 
     }
-    @include ipad {
+    @include desktop-1150 {
         .left__block {
             width: 100%;
         }
@@ -122,7 +278,7 @@
         width: 30%;
         float: left;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
     }
@@ -130,12 +286,12 @@
         width: 60%;
         float: right;
 
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
     }
 
-    @include ipad {
+    @include desktop-1150 {
         .left__block {
             display: none;
         }
@@ -151,17 +307,16 @@
         }
     }
 
-
     .bullets__block {
         width: 41%;
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
             margin-bottom: rem(20px);
         }
     }
     .checks__block {
         width: 58%;
-        @include mobile {
+        @include mobile-wide {
             width: 100%;
         }
 
@@ -265,7 +420,7 @@
         display: block;
         background-position: -74px -5px;
 
-        @include desktop-1150 {
+        @include desktop-1280 {
             zoom: 0.8;
         }
 
@@ -278,7 +433,7 @@
     margin-bottom: rem(50px);
     width: 83%;
 
-    @include mobile {
+    @include mobile-wide {
         width: 100%;
     }
 }
@@ -288,12 +443,12 @@
         font-size: rem(24px);
         text-transform: none;
 
-        @include ipad {
+        @include desktop-1150 {
             font-size: rem(20px);
 
         }
 
-        @include mobile {
+        @include mobile-wide {
             margin-bottom: rem(20px);
 
         }
@@ -302,7 +457,7 @@
         margin-left: rem(13px);
         padding: rem(15px) rem(30px);
 
-        @include mobile {
+        @include mobile-wide {
             margin-left: 0;
         }
 
@@ -326,7 +481,7 @@
     left: 61%;
     top: 21%;
 
-    @include ipad {
+    @include desktop-1150 {
         left: 75%;
         top: 25%;
     }
@@ -337,7 +492,7 @@
     right: 63%;
     top: 22%;
 
-    @include ipad {
+    @include desktop-1150 {
         right: 70%;
         top: 25%;
     }
@@ -350,7 +505,7 @@
 
     }
 
-    @include ipad {
+    @include desktop-1150 {
         width: 23%;
     }
 

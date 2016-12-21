@@ -1,3 +1,124 @@
+.contact-us {
+    background-image: url('../img/bg/banner_contacts.jpg');
+    background-size: 100%;
+    background-position: 45% 10%;
+    padding-top: 14%;
+
+    padding-bottom: rem(102px);
+
+    @include tablet {
+        background-size: 250%;
+        background-position: 3% 45%;
+    }
+
+
+
+
+}
+.banner__subscription-form {
+    background: $orange;
+    border-radius: 20px;
+    margin-bottom: rem(37px);
+    text-align: center;
+    padding: rem(42px) rem(33px);
+
+}
+.banner__title {
+    width: 75%;
+
+    @include desktop {
+        width: 80%;
+    }
+
+    @include ipad {
+        width: 100%;
+        text-align: center;
+    }
+
+    @include laptop {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    @include tablet {
+        width: 100%;
+
+    }
+}
+.title {
+    h3 {
+        text-align: left;
+        color: #fff;
+        font-size: rem(45px);
+
+        @include mobile {
+            font-size: rem(35px);
+
+        }
+    }
+}
+.sf__text {
+    color: #fff;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: rem(30px);
+
+
+}
+.form-control {
+    border-radius: 20px;
+    font-size: rem(25px);
+    padding: rem(30px) rem(40px);
+    margin-bottom: rem(20px);
+    border-color: #dfdfdf;
+
+    @include mobile {
+        font-size: rem(20px);
+        padding: rem(20px) rem(30px);
+        margin-bottom: rem(15px);
+    }
+}
+.sf__form {
+    width: 95%;
+
+    .btn{
+        background: $green;
+        color: #fff;
+        width: 100%;
+
+        &:hover{
+            background-color: #449d44;
+            border-color: #398439;
+        }
+
+        @include desktop {
+            font-size: 150%;
+
+
+        }
+        
+        @include desktop-1280 {
+            font-size: 130%;
+
+
+        }
+
+        @include ipad {
+            font-size:rem(21px);
+            padding: rem(15px) rem(10px);
+
+        }
+
+        @include mobile {
+            white-space: normal
+
+        }
+    }
+}
+
 .contact-us_form {
     padding-top: rem(100px);
     padding-botom: rem(100px);

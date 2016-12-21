@@ -2,9 +2,7 @@
 
     .container {
 
-        @include desktop {
-            width: 90%;
-        }
+
     }
 
     background: #fbfbfb;
@@ -41,6 +39,7 @@
     
     @include ipad {
         padding-bottom:0;
+        background: none;
     }
 
     @include laptop {
@@ -176,9 +175,20 @@
 
     color: $green;
     
-    @include laptop {
+    @include ipad {
+        margin-left:rem(50px);
         width: 100%;
     }
+
+
+    @include tablet {
+        margin-left: 0;
+    }
+    
+
+
+
+
     
 
 }
@@ -189,6 +199,7 @@
     color: #fff;
     font-weight: 700;
     line-height: 1.25;
+
 
     margin-bottom: rem(60px);
     .green {
@@ -204,12 +215,15 @@
     @include mobile {
         color: $green;
     }
+
 }
 
 .rules__check_item {
     margin-left: rem(107px);
     margin-bottom: rem(50px);
     position: relative;
+
+    
 
     @include mobile {
         margin-left:rem(38px);
@@ -244,11 +258,12 @@
         
         @include ipad {
             font-size: rem(15px);
+            color: #282421;
 
         }
         
         @include mobile {
-            color: $green;
+            color: #282421;
         }
     }
 
@@ -259,6 +274,11 @@
 
         @include desktop {
             top: 0;
+        }
+
+        @include ipad {
+            right: 105%;
+
         }
 
         i {

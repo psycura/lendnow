@@ -1,3 +1,86 @@
+.payload{
+    background-image: url('../img/bg/payload-bg.jpg');
+    background-size:cover;
+    background-position: top;
+    padding-top:rem(140px);
+    padding-bottom:rem(140px);
+
+
+
+    .panel__title{
+        width: 100%;
+        color: #fff;
+        h3{
+            font-size:rem(42px);
+
+            @include mobile {
+                font-size:rem(30px);
+
+            }
+        }
+
+
+    }
+
+    .panel__desc{
+        color: #fff;
+        font-size:rem(22px);
+        line-height: 1.42;
+
+
+    }
+
+    .panel__columns{
+        text-align: center;
+    }
+
+    .panel__col_img{
+        border-radius:50%;
+        background: #fff;
+        width:rem(95px);
+        height:rem(95px);
+        padding:rem(16px) rem(20px);
+        margin-bottom:rem(20px);
+        display: inline-block;
+
+
+
+
+        span{
+            zoom: 0.65;
+
+            @include mobile {
+                zoom: 0.5;
+            }
+        }
+
+        .apply{
+            padding:rem(11px) rem(25px);
+            @include mobile {
+                padding:rem(15px) rem(19px);
+
+            }
+        }
+
+        @include mobile {
+            padding:rem(15px) rem(19px);
+
+        }
+    }
+
+    .panel__col_text{
+        color: #fff;
+        @include oswald('regular', rem(15px));
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom:rem(40px);
+        line-height: 1.6;
+
+    }
+
+
+}
+
 .how-apply {
     padding-top: rem(140px);
     padding-bottom: rem(140px);
@@ -76,12 +159,22 @@
         padding: rem(29px);
         margin-bottom: rem(20px);
 
+        @include desktop {
+            width: rem(140px);
+            height: rem(140px);
+        }
+
         @include mobile {
             display: inline-block;
         }
         span {
             zoom: 0.85;
             display: inline-block;
+            
+            @include desktop {
+                zoom: 0.8;
+
+            }
 
             @include laptop {
                 zoom: 0.75;

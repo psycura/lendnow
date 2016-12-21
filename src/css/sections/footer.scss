@@ -100,7 +100,7 @@ footer {
     }
 
     .about-us__block{
-        @include tablet {
+        @include mobile {
             width:30%;
         }
         @include mobile {
@@ -112,7 +112,7 @@ footer {
 
 
     .contacts-info__block, .blogs__block{
-        @include tablet {
+        @include mobile {
             width:33%;
         }
         @include mobile {
@@ -198,6 +198,11 @@ footer {
         vertical-align: top;
         width: calc(90% - 1rem);
         margin-left: rem(18px);
+
+        @include desktop {
+            margin-left:1%;
+            
+        }
 
         @include ipad {
             margin-left: rem(5px);

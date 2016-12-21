@@ -4,16 +4,14 @@
 
         text-align: center;
 
-        @include desktop {
-            width: 90%;
-        }
+
 
     }
 
     padding-top: rem(150px);
     padding-bottom:rem(150px);
 
-    @include ipad {
+    @include desktop-1150 {
         padding-top: rem(100px);
         padding-bottom:rem(100px);
     }
@@ -71,24 +69,19 @@
     border-bottom:3px solid transparent;
     transition: all .3s;
 
-    @include mobile {
+    @include mobile-wide {
         width: 100%;
         margin-bottom:rem(20px);
-
     }
 
 
     &:hover {
         border-color: $grey;
-
-
     }
-
     a {
         text-decoration: none;
         &:hover {
             text-decoration: none;
-
         }
     }
 }
@@ -101,7 +94,7 @@
 
 .post__date {
     position: absolute;
-    bottom: 29%;
+    top: 63%;
     left: 34%;
 
     background: $orange;
@@ -110,21 +103,25 @@
     text-transform: uppercase;
     padding: rem(10px) rem(15px);
     
-    @include ipad {
+    @include desktop-1150 {
         font-size: rem(13px);
         padding: rem(5px) rem(10px);
-        bottom: 37%;
 
+
+    }
+    @include ipad {
+        top:60%;
+    }
+    
+    @include laptop {
+        top:57%;
 
     }
     @include tablet {
-        bottom: 45%;
+        top:45%;
+        
+    }
 
-    }
-    
-    @include mobile {
-        bottom: 36%;
-    }
 }
 
 .post__title {
@@ -152,7 +149,7 @@
     }
 
 
-    @include ipad {
+    @include desktop-1150 {
         margin-left: 0;
 
         .icon {

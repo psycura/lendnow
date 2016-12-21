@@ -21,10 +21,10 @@
 .deals__title {
     margin: 0 auto;
     text-align: center;
-    margin-bottom:rem(100px);
+    margin-bottom: rem(100px);
     position: relative;
     display: inline-block;
-    &:before{
+    &:before {
         content: '';
         position: absolute;
         bottom: rem(-10px);
@@ -38,9 +38,8 @@
 
         }
 
-
     }
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         bottom: rem(-10px);
@@ -65,25 +64,18 @@
     display: inline-block;
     margin-right: rem(23px);
     position: relative;
-    width:rem(315px);
-
-    @include desktop {
-        width:rem(295px);
-    }
-    
-    @include ipad {
-        width:rem(200px);
-
+    width: 20%;
+    a {
+        color: #fff;
     }
 
     @include tablet {
-        margin-right:rem(50px);
-        margin-bottom:rem(95px);
-        width:rem(220px);
+        width: 44%;
+        margin-bottom: rem(140px);
     }
 
-    a {
-        color: #fff;
+    @include mobile-wide {
+        width: 73%;
     }
 }
 
@@ -92,25 +84,21 @@
     text-align: center;
     top: 100%;
     left: 0;
-    padding: rem(29px) rem(64px);
+    padding: 1% 16%;
+
     background: #63a12f;
-    width: rem(315px);
-    min-height:rem(94px);
+    width: 100%;
+    min-height: rem(94px);
     display: flex;
     align-items: center;
-    @include desktop {
-        width:rem(295px);
-    }
-    @include ipad {
-        width:rem(200px);
-        padding:rem(20px);
+
+    font-size: 95%;
+
+    @include tablet {
+        background: #383838;
 
     }
-    
-    @include tablet {
-        width:rem(220px);
-        
-    }
+
 }
 
 .deals__bottom {
@@ -118,22 +106,21 @@
     padding-top: rem(188px);
     padding-bottom: rem(86px);
     @include ipad {
-        padding-top:rem(140px);
-        padding-bottom:rem(70px);
+        padding-top: rem(140px);
+        padding-bottom: rem(70px);
     }
-    
+
     @include tablet {
-        padding-top:rem(70px);
+        padding-top: rem(150px);
 
     }
-
 
 }
 
-.deals_text_block{
+.deals_text_block {
     margin: 0 auto;
     @include ipad {
-        width:54%;
+        width: 54%;
         text-align: center;
 
     }
@@ -148,21 +135,20 @@
     color: #fff;
     display: inline-block;
     vertical-align: middle;
-    
-    @include ipad {
+
+    @include desktop-1280 {
         margin-bottom: rem(20px);
         line-height: 1.2;
         display: block;
     }
 
-
 }
 
-.deals__cta_button{
+.deals__cta_button {
     display: inline-block;
     vertical-align: middle;
-    margin-left:rem(67px);
-    .btn{
+    margin-left: rem(67px);
+    .btn {
         padding: rem(15px) rem(50px);
     }
 
