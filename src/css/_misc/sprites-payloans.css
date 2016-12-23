@@ -1,0 +1,91 @@
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-1481321415_finance-30 {
+  width: 118px;
+  height: 115px;
+  background-position: -5px -5px; }
+
+.sprite-1481426735_forward {
+  width: 181px;
+  height: 171px;
+  background-position: -133px -5px; }
+
+.sprite-1481426912_thefreeforty_location {
+  width: 117px;
+  height: 160px;
+  background-position: -324px -5px; }
+
+.sprite-1481427925_sign {
+  width: 109px;
+  height: 124px;
+  background-position: -5px -175px; }
+
+.sprite-1481427925_sign-copy {
+  width: 85px;
+  height: 95px;
+  background-position: -324px -175px; }
+
+.sprite-Apply {
+  width: 69px;
+  height: 95px;
+  background-position: -451px -5px; }
+
+.sprite-Layer-6 {
+  width: 112px;
+  height: 112px;
+  background-position: -419px -175px; }
+
+.sprite-Layer-6-copy {
+  width: 94px;
+  height: 94px;
+  background-position: -124px -297px; }
+
+.sprite-Layer-7 {
+  width: 87px;
+  height: 119px;
+  background-position: -228px -297px; }
+
+.sprite-Monitor-Euro {
+  width: 92px;
+  height: 94px;
+  background-position: -325px -297px; }
+
+.sprite-Mouse-Euro-Icon {
+  width: 87px;
+  height: 87px;
+  background-position: -427px -297px; }
+
+.sprite-bank {
+  width: 159px;
+  height: 150px;
+  background-position: -530px -5px; }
+
+.sprite-calendar {
+  width: 157px;
+  height: 133px;
+  background-position: -541px -165px; }
+
+.sprite-chronometer {
+  width: 131px;
+  height: 162px;
+  background-position: -524px -308px; }
+
+.sprite-customer-service {
+  width: 133px;
+  height: 164px;
+  background-position: -5px -480px; }
+
+.sprite-hand-Euro-icon {
+  width: 97px;
+  height: 98px;
+  background-position: -148px -480px; }
+
+.sprite-icon {
+  width: 111px;
+  height: 107px;
+  background-position: -255px -480px; }
+
+/*# sourceMappingURL=sprites-payloans.css.map */

@@ -1,0 +1,144 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-check-small {
+  background-image: url(img/decor/sprite.png);
+  background-position: -529px -407px;
+  width: 32px;
+  height: 32px;
+}
+.icon-check {
+  background-image: url(img/decor/sprite.png);
+  background-position: -400px -407px;
+  width: 59px;
+  height: 59px;
+}
+.icon-clock {
+  background-image: url(img/decor/sprite.png);
+  background-position: 0px -407px;
+  width: 65px;
+  height: 65px;
+}
+.icon-coins and hand {
+  background-image: url(img/decor/sprite.png);
+  background-position: -161px -246px;
+  width: 87px;
+  height: 83px;
+}
+.icon-email-1 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -224px -542px;
+  width: 22px;
+  height: 22px;
+}
+.icon-email {
+  background-image: url(img/decor/sprite.png);
+  background-position: -408px -542px;
+  width: 21px;
+  height: 21px;
+}
+.icon-inspection {
+  background-image: url(img/decor/sprite.png);
+  background-position: 0px -542px;
+  width: 62px;
+  height: 60px;
+}
+.icon-moneybag {
+  background-image: url(img/decor/sprite.png);
+  background-position: 0px -246px;
+  width: 91px;
+  height: 91px;
+}
+.icon-percent {
+  background-image: url(img/decor/sprite.png);
+  background-position: -135px -407px;
+  width: 61px;
+  height: 63px;
+}
+.icon-phone-1 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -246px 0px;
+  width: 150px;
+  height: 150px;
+}
+.icon-phone-2 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -499px -542px;
+  width: 22px;
+  height: 20px;
+}
+.icon-phone-3 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -316px -542px;
+  width: 22px;
+  height: 22px;
+}
+.icon-phone {
+  background-image: url(img/decor/sprite.png);
+  background-position: -132px -542px;
+  width: 22px;
+  height: 22px;
+}
+.icon-profile {
+  background-image: url(img/decor/sprite.png);
+  background-position: -266px -407px;
+  width: 64px;
+  height: 59px;
+}
+.icon-projects {
+  background-image: url(img/decor/sprite.png);
+  background-position: -469px -246px;
+  width: 69px;
+  height: 65px;
+}
+.icon-suitcase {
+  background-image: url(img/decor/sprite.png);
+  background-position: -318px -246px;
+  width: 81px;
+  height: 80px;
+}
+.icon-target {
+  background-image: url(img/decor/sprite.png);
+  background-position: 0px 0px;
+  width: 176px;
+  height: 176px;
+}
+.icon-trophy {
+  background-image: url(img/decor/sprite.png);
+  background-position: -466px 0px;
+  width: 136px;
+  height: 154px;
+}
+.icon-zoom-1 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -672px -170px;
+  width: 17px;
+  height: 14px;
+}
+.icon-zoom-2 {
+  background-image: url(img/decor/sprite.png);
+  background-position: -672px 0px;
+  width: 17px;
+  height: 15px;
+}
+.icon-zoom {
+  background-image: url(img/decor/sprite.png);
+  background-position: -672px -85px;
+  width: 17px;
+  height: 15px;
+}
