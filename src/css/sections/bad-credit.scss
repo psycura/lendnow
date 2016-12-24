@@ -1,7 +1,10 @@
 .bad-credit__content {
-    padding-top: rem(100px);
     padding-bottom: rem(100px);
 
+    @include ipad {
+        padding-top: rem(100px);
+
+    }
 }
 
 .bad-credit__content_col {

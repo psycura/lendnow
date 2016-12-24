@@ -3,64 +3,23 @@
     background: $green;
     padding-top: rem(40px);
     padding-bottom: rem(40px);
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+        @include tablet {
+            display: block;
+        }
+    }
     @include oswald('regular', 170%);
-
     @include laptop {
-        font-size:155%;
-
+        font-size: 155%;
     }
 
-}
 
-.nav__title {
 
-    display: inline-block;
-    font-weight: 700;
-    margin-right: 3%;
-    @include desktop-1280 {
-        margin-right: 0;
 
-    }
-
-    @include tablet {
-
-        font-size: rem(25px);
-        margin-bottom: rem(15px);
-
-    }
-}
-
-.nav__payload_list {
-
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.nav__payload_item {
-    display: inline-block;
-    margin-right: rem(20px);
-
-    @include desktop-1150 {
-        margin-right: rem(17px);
-
-    }
-
-    @include ipad {
-        margin-right: 0;
-
-    }
-
-    @include tablet {
-        margin-bottom: rem(15px);
-        margin-right: 39%;
-
-    }
-
-    @include mobile {
-
-        margin-right: 20%;
-
-    }
 
     a {
         color: #fff;
@@ -69,18 +28,17 @@
         border: 1px solid transparent;
         border-radius: 9px;
 
-        @include desktop-1280 {
-            font-size: 70%;
-
+        @include desktop-1150 {
+            font-size:95%;
         }
+        @include laptop {
+            font-size:79%;
+        }
+
+
         @include tablet {
-
             font-size: rem(25px);
-            padding: rem(10px);
-            
-
-
-
+            padding: rem(7px);
         }
 
         &:hover, &:focus {
@@ -89,16 +47,68 @@
             background: $orange;
         }
 
-        .active {
-            text-decoration: none;
-            color: #fff;
-            background: $orange;
-        }
+
+    }
+
+
+}
+
+.nav__title {
+    width:10%;
+    font-weight: 700;
+    @include desktop-1280 {
+        width: 13%;
+
+    }
+    @include laptop {
+        font-size:91%;
+    }
+    @include tablet {
+        font-size: rem(25px);
+        margin-bottom: rem(15px);
+        display: inline-block;
+        width:70%;
     }
 }
 
+.nav__payload_list {
+    display: flex;
+    margin: 0 auto;
+    width:87%;
+    justify-content:space-around;
+
+    @include tablet {
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: rem(15px);
+        margin-left:rem(30px);
+
+    }
+}
+
+.nav__payload_item {
+
+    @include tablet {
+        margin-bottom: rem(25px);
+        margin-right: 39%;
+    }
+    @include mobile {
+        margin-right: 20%;
+    }
+
+
+}
+
+.nav__link.active{
+
+        text-decoration: none;
+        color: #fff;
+        background: $orange;
+
+}
+
 .nav__faq_link {
-    display: inline-block;
+    width: 5%;
     a {
         color: #fff;
 
@@ -109,6 +119,8 @@
         @include tablet {
 
             font-size: rem(25px);
+            display: inline-block;
+
 
         }
 
@@ -119,4 +131,10 @@
         }
     }
 
+
+
 }
+
+
+
+

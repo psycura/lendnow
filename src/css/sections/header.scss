@@ -42,7 +42,8 @@ header {
         }
 
         @include laptop {
-            width: 60%;
+            width: 58%;
+
         }
 
         //@include tablet {
@@ -50,9 +51,9 @@ header {
         //    float: left;
         //}
 
-        @include tablet {
-            width: 59%;
-        }
+        //@include tablet {
+        //    width: 59%;
+        //}
 
         @include mobile {
             display: none;

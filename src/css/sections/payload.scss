@@ -1,8 +1,12 @@
 .payload{
     background-size:cover;
     background: url('../img/bg/payload-bg.jpg') top;
-    padding-top:rem(140px);
     padding-bottom:rem(140px);
+    
+    @include ipad {
+        padding-top:rem(140px);
+
+    }
 
 
 

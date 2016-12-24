@@ -20,7 +20,7 @@ mixin socials
 
 
 
-mixin navigation
+mixin navigation($active)
     -
         var navItems={
         'Home':'index.html',
@@ -47,11 +47,15 @@ mixin navigation
             .collapse.navbar-collapse(id='navbar1')
                 ul.nav.navbar-nav
                     each pageUrl, pageName in navItems
-                        li.nav.navbar-nav
-                            a(href="#{pageUrl}").nav__link=pageName
+                        if $active==pageName
+                            li.nav.navbar-nav.active
+                                a(href="#{pageUrl}").nav__link=pageName
+                        else
+                            li.nav.navbar-nav
+                                a(href="#{pageUrl}").nav__link=pageName
 
 
-mixin navigation_inner
+mixin navigation_inner($active)
     -
         var navItems={
         'Home':'../index.html',
@@ -77,10 +81,14 @@ mixin navigation_inner
             .collapse.navbar-collapse(id='navbar1')
                 ul.nav.navbar-nav
                     each pageUrl, pageName in navItems
-                        li.nav.navbar-nav
-                            a(href="#{pageUrl}").nav__link=pageName
+                        if $active == pageName
+                            li.nav.navbar-nav.active
+                                a(href="#{pageUrl}").nav__link=pageName
+                        else
+                            li.nav.navbar-nav
+                                a(href="#{pageUrl}").nav__link=pageName
 
-mixin navigation_payload
+mixin navigation_payload($active)
     -
         var navItems={
         'Instant Payday Loans':'../pages/payload.html',
@@ -96,8 +104,12 @@ mixin navigation_payload
                 |Learn More:
             ul.nav__payload_list
                 each pageUrl, pageName in navItems
-                    li.nav__payload_item
-                        a(href="#{pageUrl}").nav__payload_link=pageName
+                    li.nav.navbar-nav.nav__payload_item
+                        if $active == pageName
+                            a(href="#{pageUrl}").nav__link.active=pageName
+                        else
+                            a(href="#{pageUrl}").nav__link=pageName
+
             .nav__faq_link
                 a(href="#") FAQ
 

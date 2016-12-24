@@ -2,7 +2,6 @@
     background-image: url('../img/bg/bad-credit-bg.jpg');
     background-size: cover;
     background-position: top;
-    padding-top: 12%;
 
     padding-bottom: rem(102px);
 
@@ -24,6 +23,10 @@
 
     @include mobile {
         background-size: cover;
+    }
+    @include ipad {
+        padding-top: 12%;
+
     }
 
 }

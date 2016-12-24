@@ -1,0 +1,120 @@
+.nav__payload {
+    color: #fff;
+    background: $green;
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
+    @include oswald('regular', 170%);
+
+    @include laptop {
+        font-size:155%;
+
+    }
+
+}
+
+.nav__title {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 3%;
+    @include desktop-1280 {
+        margin-right: 0;
+
+    }
+    @include tablet {
+
+        font-size: rem(25px);
+        margin-bottom: rem(15px);
+
+    }
+}
+
+.nav__payload_list {
+
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.nav__payload_item {
+    display: inline-block;
+    margin-right: rem(20px);
+
+    @include desktop-1150 {
+        margin-right: rem(17px);
+
+    }
+
+    @include ipad {
+        margin-right: 0;
+
+    }
+
+    @include tablet {
+        margin-bottom: rem(15px);
+        margin-right: 39%;
+
+    }
+
+    @include mobile {
+
+        margin-right: 20%;
+
+    }
+
+    a {
+        color: #fff;
+        font-size: rem(27px);
+        padding: rem(15px);
+        border: 1px solid transparent;
+        border-radius: 9px;
+
+        @include desktop-1280 {
+            font-size: 70%;
+
+        }
+        @include tablet {
+
+            font-size: rem(25px);
+            padding: rem(10px);
+
+
+
+
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #fff;
+            background: $orange;
+        }
+
+        .active {
+            text-decoration: none;
+            color: #fff;
+            background: $orange;
+        }
+    }
+}
+
+.nav__faq_link {
+    display: inline-block;
+    a {
+        color: #fff;
+
+        padding: rem(15px);
+        border: 1px solid transparent;
+        border-radius: 9px;
+
+        @include tablet {
+
+            font-size: rem(25px);
+
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #fff;
+            background: $orange;
+        }
+    }
+
+}

@@ -2,9 +2,14 @@
     background-image: url('../img/bg/banner_contacts.jpg');
     background-size: 100%;
     background-position: 45% 10%;
-    padding-top: 14%;
 
     padding-bottom: rem(102px);
+    
+    
+    @include ipad {
+        padding-top: 14%;
+
+    }
 
     @include tablet {
         background-size: 250%;
